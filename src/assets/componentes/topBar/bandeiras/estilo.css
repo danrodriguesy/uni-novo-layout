@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+img {
+    width: 22px;
+}

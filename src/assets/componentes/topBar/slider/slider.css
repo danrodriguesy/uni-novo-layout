@@ -1,0 +1,12 @@
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span {
+    color: #FFF;
+}
+.pix {
+    width: 20px;
+}
