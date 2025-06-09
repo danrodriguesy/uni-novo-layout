@@ -1,4 +1,5 @@
 import styles from './fields.module.css';
+import Button from '../botaoBuscar/botaoBuscar';
 
 const icon = () => {
     return (
@@ -38,6 +39,10 @@ function Fields() {
                     <option value="valor1" selected>Escolha um ano</option>
                 </select>
                 {icon()}
+            </div>
+
+            <div className={styles.selectWrapper}>
+                <Button />
             </div>
         </div>
     );

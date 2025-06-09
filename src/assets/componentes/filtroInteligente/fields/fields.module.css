@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 }
 
 .selectWrapper {
@@ -19,16 +20,12 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0; /* remova se você tiver estilos específicos */
+  outline: 0;
 }
 
 .first {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.last {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .svg {

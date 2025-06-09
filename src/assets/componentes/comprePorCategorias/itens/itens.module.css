@@ -1,0 +1,12 @@
+.containerImagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.containerImagens > img {
+    width: 270px;
+    height: auto;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.containerBanner {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.banner {
+    width: 1060px;
+}
