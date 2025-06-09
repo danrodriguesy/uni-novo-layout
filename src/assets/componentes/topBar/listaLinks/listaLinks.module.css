@@ -1,0 +1,24 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.links > li {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+.noClick {
+    cursor: default;
+}
+.icon {
+    width: 18px;
+    height: auto;
+}
+.itemIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}

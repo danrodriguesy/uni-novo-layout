@@ -1,0 +1,14 @@
+.container {
+    width: 1290px;
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.containerLogoMenu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

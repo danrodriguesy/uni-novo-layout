@@ -1,0 +1,23 @@
+.container  {
+    width: 100%;
+    background-color: #F7F7F7;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    width: 38px;
+    height: auto;
+}
+.title {
+    color: #333333;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}

@@ -1,0 +1,41 @@
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 5rem;
+  border: 1px solid #ADADAD;
+  width: 500px;
+}
+
+.input {
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #ADADAD;
+  border: 0;
+  padding: 1rem 1rem;
+  width: 395px;
+}
+
+.iconLeft {
+  position: absolute;
+  right: 12px;
+  color: #ADADAD;
+  pointer-events: none;
+}
+
+.iconRight {
+  position: absolute;
+  right: 40px;
+  color: #ADADAD;
+  cursor: pointer;
+}
+
+.input::placeholder {
+  color: #ADADAD;
+  font-style: italic;
+  opacity: 1; /* se quiser totalmente visível */
+}

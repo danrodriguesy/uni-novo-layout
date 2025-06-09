@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.selectWrapper {
+  position: relative;
+  width: 240px;
+}
+
+.select {
+  width: 100%;
+  padding: 1rem 2.5rem 1rem 1rem; /* espaço à direita pro ícone */
+  border: 0;
+  background-color: #fff;
+  font-weight: 100;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0; /* remova se você tiver estilos específicos */
+}
+
+.first {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.last {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.svg {
+  position: absolute;
+  right: 12px;
+  top: 57%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}

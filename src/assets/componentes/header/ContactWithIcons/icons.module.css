@@ -1,0 +1,21 @@
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    align-items: center;
+    gap: 5px;
+}
+.texto {
+    font-size: 11px;
+}
+
+.icons svg { 
+    font-size: 25px;
+}

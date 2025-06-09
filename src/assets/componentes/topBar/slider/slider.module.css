@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.texto {
+  color: #FFF;
+}
+
+.pix {
+  width: 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: center;
+  margin-right: 8rem;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.seta {
+  width: 10px;
+  height: auto;
+  cursor: pointer;
+}
