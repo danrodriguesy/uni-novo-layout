@@ -1,0 +1,212 @@
+.title {
+  color: #333333;
+  font-size: 25px;
+}
+
+.bannerLateral {
+  width: 235px;
+  height: auto;
+}
+
+.icon {
+  width: 38px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 2rem;  
+  width: 1290px;
+  margin: auto;
+}
+
+.containerBanner {
+  flex-shrink: 0;
+}
+
+/* Carrossel */
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderArea {
+  overflow: hidden;
+  width: 786px; /* 3 cards * 262px */
+}
+
+.cardTrack {
+  display: flex;
+  gap: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ADADAD;
+  padding: 1.2rem;
+  width: 212px;
+  margin-left: 9px;
+  border-radius: 1rem;
+  height: 500px; /* para manter a mesma altura em todos */
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.iconHeart {
+  width: 40px;
+  height: auto;
+}
+.iconHeart:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  background-color: #AE1F21;
+  padding: 15px 1.5rem;
+  border-radius: 1rem;
+  color: #FFF;
+  font-weight: 700;
+  width: 50px;
+  text-align: center;
+}
+
+.imagemProduto {
+  width: 160px;
+}
+
+.containerImagem {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.containerRef {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+}
+
+.containerTituloProduto {
+      display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tituloProduto {
+     display: -webkit-box;
+  -webkit-line-clamp: 2; /* ou 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.containerStars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 8px;
+}
+
+.starAmarela {
+  color: #FFC107;
+  font-size: 30px;
+}
+
+.starCinza {
+  color: #E0E0E0;
+  font-size: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btnCadastro {
+  width: 270px;
+  padding: 1rem;
+  font-size: 18px;
+  color: #fff;
+  background-color: #AE1F21;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.textoBtn1 {
+  font-weight: bold;
+}
+
+.textoBtn2 {
+  font-weight: lighter;
+}
+
+.seta {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+.left {
+  left: -30px;
+  border-bottom-left-radius: 1rem;
+}
+.right {
+  right: -30px;
+}
+.arrowLeft {
+    width: 44px;
+}
+.arrowRight {
+    width: 44px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+  background-color: #FFF;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFF;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.dot:hover {
+  background: #999;
+}
+.active {
+  background-color: #454545;
+}

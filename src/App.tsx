@@ -9,6 +9,7 @@ import ComprePorCategorias from './assets/componentes/comprePorCategorias/compre
 import NossasMarcas from './assets/componentes/nossasMarcas/nossasMarcas';
 import CarrosselNossasMarcas from './assets/componentes/nossasMarcas/carrossel/carrosselMarcas';
 import MaisVendidos from './assets/componentes/MaisVendidos/maisVendidos';
+import CarrosselFull from './assets/componentes/carrosselFull/carrosselFull';
 
 function App() {
   
@@ -23,7 +24,13 @@ function App() {
       <ComprePorCategorias />
       <NossasMarcas />
       <CarrosselNossasMarcas />
-      <MaisVendidos />
+      <MaisVendidos
+        titulo="Mais Vendidos"
+        imagem="src/assets/componentes/MaisVendidos/imagens/mais-vendidos.png"
+        textoBotao="Ver Mais"
+      />
+      <BannerHorizontal />
+      <CarrosselFull />
     </>
   )
 }
