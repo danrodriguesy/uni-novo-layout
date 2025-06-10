@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    background-color: #020202;
+    padding: 1rem;
+    align-items: center;
+}
+
+.contentnewsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 758px;
+    margin: auto;
+}
+
+.contentItens {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icone {
+    width: 44px;
+}
+
+.texto {
+    color: #FFF;
+}
+
+.fileds {
+    position: relative;
+    width: 500px;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    outline: 0;
+}
+
+.btn {
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #BB0715;
+    border-radius: 1rem;
+    padding: 4px 2rem;
+}

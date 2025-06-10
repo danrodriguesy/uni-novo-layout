@@ -1,0 +1,150 @@
+.wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sliderArea {
+  overflow: hidden;
+  width: 1075px; /* 262px * 4 cards */
+}
+
+.cardTrack {
+  display: flex;
+  gap: 0;
+}
+
+.card {
+      flex: 0 0 auto;
+    width: 219px;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ADADAD;
+    background-color: white;
+}
+
+.seta {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #AE1F21;
+  cursor: pointer;
+  z-index: 10;
+  width: 44px !important;
+}
+.left {
+  left: -36px;
+}
+.right {
+  right: -21px;
+}
+.arrowLeft, .arrowRight {
+  width: 44px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.active {
+  background-color: #000;
+}
+
+/* Extras (mantém compatível com os estilos anteriores) */
+.iconHeart {
+  width: 40px;
+  height: auto;
+}
+.iconHeart:hover {
+  color: red;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tag {
+  background-color: #AE1F21;
+  padding: 10px;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  width: 50px;
+  text-align: center;
+}
+.imagemProduto {
+  width: 220px;
+}
+.containerImagem {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.containerRef {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+}
+.containerTituloProduto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  height: 48px;
+  overflow: hidden;
+}
+.containerStars {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+  gap: 6px;
+}
+.starAmarela {
+  color: #FFC107;
+  font-size: 22px;
+}
+.starCinza {
+  color: #E0E0E0;
+  font-size: 22px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+.btnCadastro {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 16px;
+  color: white;
+  background-color: #AE1F21;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.textoBtn1 {
+  font-weight: bold;
+}
+.textoBtn2 {
+  font-weight: lighter;
+}

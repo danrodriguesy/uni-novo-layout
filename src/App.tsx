@@ -10,6 +10,10 @@ import NossasMarcas from './assets/componentes/nossasMarcas/nossasMarcas';
 import CarrosselNossasMarcas from './assets/componentes/nossasMarcas/carrossel/carrosselMarcas';
 import MaisVendidos from './assets/componentes/MaisVendidos/maisVendidos';
 import CarrosselFull from './assets/componentes/carrosselFull/carrosselFull';
+import UniversalRecomenda from './assets/componentes/universalRecomenda/universalRecomenda';
+import VitrineImagens from './assets/componentes/vitrineImagens/vitrineImagens';
+import Newsletter from './assets/componentes/newsletter/newsletter';
+import Footer from './assets/componentes/footer/footer';
 
 function App() {
   
@@ -30,7 +34,11 @@ function App() {
         textoBotao="Ver Mais"
       />
       <BannerHorizontal />
+      <UniversalRecomenda />
       <CarrosselFull />
+      <VitrineImagens />
+      <Newsletter />
+      <Footer />
     </>
   )
 }

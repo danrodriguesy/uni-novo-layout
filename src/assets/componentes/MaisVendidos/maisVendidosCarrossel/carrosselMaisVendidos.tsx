@@ -35,7 +35,7 @@ function CarrosselMaisVendidos() {
         <div className={styles.containerBanner}>
           <img
             className={styles.bannerLateral}
-            src="src/assets/componentes/Lancamentos/imagens/banner-vertical-lancamentos.png"
+            src="src\assets\componentes\MaisVendidos\maisVendidosCarrossel\imagens\banner-lateral-mais-vendidos.png"
             alt="Banner Lançamentos"
           />
         </div>

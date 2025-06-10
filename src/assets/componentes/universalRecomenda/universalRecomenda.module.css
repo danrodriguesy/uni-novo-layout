@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1290px;
+    gap: 19rem;
+    margin-top: 3rem;
+}
+.icone {
+    width: 38px;
+    height: auto;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.btn {
+    border: 1px solid #ADADAD;
+    color: #707070;
+    padding: 0.5rem 2.5rem;
+    font-size: 14px;
+    border-radius: .5rem;
+    background-color: #FFF;
+    cursor: pointer;
+}
