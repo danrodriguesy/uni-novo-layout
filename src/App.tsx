@@ -14,9 +14,25 @@ import UniversalRecomenda from './assets/componentes/universalRecomenda/universa
 import VitrineImagens from './assets/componentes/vitrineImagens/vitrineImagens';
 import Newsletter from './assets/componentes/newsletter/newsletter';
 import Footer from './assets/componentes/footer/footer';
+import useIsMobile from './assets/hooks/useIsMobile';
 
 function App() {
   
+  const isMobile = useIsMobile();
+
+  if(isMobile){
+    return (
+      <>
+        <TopBar />
+        <Header />
+        <SliderBannerPrincipal />
+        <NossasMarcas />
+        <CarrosselNossasMarcas />
+        <Lancamentos />
+      </>
+    )
+  }
+
   return (
     <>
       <TopBar />

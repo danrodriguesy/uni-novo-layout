@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './menu.module.css';
+import useIsMobile from '../../../hooks/useIsMobile';
 
 const menuItems = [
   {
@@ -31,13 +32,15 @@ function Menu() {
 
   const toggleMenu = () => setAberto((prev) => !prev);
 
+  const isMobile = useIsMobile();
+
   return (
     <div className={styles.wrapper}>
       <button className={styles.hamburger} onClick={toggleMenu}>
         <span className={styles.icon}>
           {aberto ? <FaTimes size={20} /> : <FaBars size={20} />}
         </span>
-        <span className={styles.label}>Menu</span>
+        {!isMobile && <span className={styles.label}>Menu</span>}
       </button>
 
       <AnimatePresence>

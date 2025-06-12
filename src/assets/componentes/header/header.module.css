@@ -12,3 +12,15 @@
     align-items: center;
     gap: 2rem;
 }
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem 0;
+        
+    }
+    .containerLogoMenu {
+        flex-direction: row-reverse;
+    }
+}

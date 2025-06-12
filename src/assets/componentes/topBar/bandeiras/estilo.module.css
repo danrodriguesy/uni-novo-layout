@@ -8,3 +8,11 @@
     width: 22px;
     cursor: pointer;
 }
+
+@media (max-width: 767px){
+    .container > img {
+        width: 31px;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+}

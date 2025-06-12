@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slider.module.css';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const banners = [
   { id: 1, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 1' },
@@ -8,7 +9,15 @@ const banners = [
   { id: 3, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 3' },
 ];
 
+
+const bannersMobile = [
+  { id: 1, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 1' },
+  { id: 2, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 2' },
+  { id: 3, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 3' }
+]
+
 function Banner() {
+  const isMobile = useIsMobile();
   const [index, setIndex] = useState(0);
 
   const next = () => setIndex((prev) => (prev + 1) % banners.length);
@@ -22,7 +31,7 @@ function Banner() {
         <AnimatePresence mode="wait">
           <motion.img
             key={banners[index].id}
-            src={banners[index].img}
+            src={isMobile ? bannersMobile[index].img : banners[index].img}
             alt={banners[index].alt}
             className={styles.bannerImage}
             initial={{ opacity: 0, x: 50 }}
