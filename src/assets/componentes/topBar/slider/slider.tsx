@@ -5,17 +5,17 @@ import styles from './slider.module.css';
 const slides = [
   {
     id: 1,
-    img: 'src/assets/componentes/topBar/slider/imagens/Pix.png',
+    img: '/imagens/topBar/pix.png',
     texto: '5% de desconto no Pix',
   },
   {
     id: 2,
-    img: 'src/assets/componentes/topBar/slider/imagens/Pix.png',
+    img: '/imagens/topBar/pix.png',
     texto: 'Frete grátis',
   },
   {
     id: 3,
-    img: 'src/assets/componentes/topBar/slider/imagens/Pix.png',
+    img: '/imagens/topBar/pix.png',
     texto: 'Ganhe 10%',
   },
 ];
@@ -28,7 +28,7 @@ function Slider() {
 
   return (
     <div className={styles.wrapper}>
-      <img src="src/assets/componentes/topBar/slider/imagens/arrow-left.png" className={styles.seta} onClick={prev} />
+      <img src="/imagens/topBar/arrowLeft.png" className={styles.seta} onClick={prev} />
       <div className={styles.sliderArea}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -44,7 +44,7 @@ function Slider() {
           </motion.div>
         </AnimatePresence>
       </div>
-      <img src="src/assets/componentes/topBar/slider/imagens/arrow-right.png" className={styles.seta} onClick={next} />
+      <img src="/imagens/topBar/arrowRight.png" className={styles.seta} onClick={next} />
     </div>
   );
 }

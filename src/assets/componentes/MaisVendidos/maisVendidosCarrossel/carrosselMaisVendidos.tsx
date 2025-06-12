@@ -35,13 +35,13 @@ function CarrosselMaisVendidos() {
         <div className={styles.containerBanner}>
           <img
             className={styles.bannerLateral}
-            src="src\assets\componentes\MaisVendidos\maisVendidosCarrossel\imagens\banner-lateral-mais-vendidos.png"
+            src="/imagens/maisVendidosCarrossel/banner-lateral-mais-vendidos.png"
             alt="Banner Lançamentos"
           />
         </div>
 
         <div className={styles.wrapper}>
-          <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="src\assets\componentes\Lancamentos\imagens\arrow-left.png" /></button>
+          <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="/imagens/maisVendidosCarrossel/arrow-left.png" /></button>
 
           <div className={styles.sliderArea}>
             <motion.div
@@ -56,7 +56,7 @@ function CarrosselMaisVendidos() {
                     <CiHeart className={styles.iconHeart} />
                   </div>
                   <div className={styles.containerImagem}>
-                    <img src="src/assets/componentes/Lancamentos/imagens/imagem-produto.png" className={styles.imagemProduto} />
+                    <img src="/imagens/maisVendidosCarrossel/imagem-produto.png" className={styles.imagemProduto} />
                   </div>
                   <div className={styles.containerRef}>
                     <span>Ref: {produto.ref}</span>
@@ -81,9 +81,7 @@ function CarrosselMaisVendidos() {
               ))}
             </motion.div>
           </div>
-
-          <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="src\assets\componentes\Lancamentos\imagens\arrow-right.png" /></button>
-
+          <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="/imagens/maisVendidosCarrossel/arrow-right.png" /></button>
           <div className={styles.dots}>
             {Array.from({ length: produtos.length - VISIBLE_CARDS + 1 }).map((_, i) => (
               <button

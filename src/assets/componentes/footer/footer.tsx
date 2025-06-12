@@ -7,7 +7,7 @@ function footer() {
         <hr className={styles.hr} />
         <img
           className={styles.logo}
-          src="src\assets\componentes\footer\imagens\logo.png"
+          src="/imagens/footer/imagens/logo-universal.png"
         />
         <hr className={styles.hr} />
       </div>
@@ -85,20 +85,20 @@ function footer() {
           </li>
           <li className={styles.icones}>
             <a href="#">
-              <img src="src\assets\componentes\footer\imagens\facebook.png" />
+              <img src="/imagens/footer/imagens/facebook.png" />
             </a>
             <a href="#">
-              <img src="src\assets\componentes\footer\imagens\instagram.png" />
+              <img src="/imagens/footer/imagens/instagram.png" />
             </a>
             <a href="#">
-              <img src="src\assets\componentes\footer\imagens\linkedin.png" />
+              <img src="/imagens/footer/imagens/linkedin.png" />
             </a>
           </li>
           <li>
             <br />
             <img
               className={styles.sac}
-              src="src\assets\componentes\footer\imagens\SAC.png"
+              src="/imagens/footer/imagens/SAC.png"
             />
           </li>
         </ul>
@@ -106,13 +106,13 @@ function footer() {
       <div className={styles.formasPagamento}>
         <h3 className={styles.titleFormasPagamento}>Formas de pagamento</h3>
         <div className={styles.bandeirasPagamento}>
-          <img src="src\assets\componentes\footer\imagens\VISA.png" />
-          <img src="src\assets\componentes\footer\imagens\Master-Card.png" />
-          <img src="src\assets\componentes\footer\imagens\americanExpress.png" />
-          <img src="src\assets\componentes\footer\imagens\elo.png" />
-          <img src="src\assets\componentes\footer\imagens\hipercard.png" />
-          <img src="src\assets\componentes\footer\imagens\pix.png" />
-          <img src="src\assets\componentes\footer\imagens\boleto.png" />
+          <img src="/imagens/footer/imagens/VISA.png" />
+          <img src="/imagens/footer/imagens/Master-Card.png" />
+          <img src="/imagens/footer/imagens/americanExpress.png" />
+          <img src="/imagens/footer/imagens/elo.png" />
+          <img src="/imagens/footer/imagens/hipercard.png" />
+          <img src="/imagens/footer/imagens/pix.png" />
+          <img src="/imagens/footer/imagens/boleto.png" />
         </div>
       </div>
       <div className={styles.containerCopyright}>
@@ -121,8 +121,8 @@ function footer() {
           <div className={styles.parceiros}>
             <p>Segurança</p>
             <div className={styles.logos}>
-              <img src="src\assets\componentes\footer\imagens\PCI.png" />
-              <img src="src\assets\componentes\footer\imagens\letsEncrypt.png" />
+              <img src="/imagens/footer/imagens/PCI.png" />
+              <img src="/imagens/footer/imagens/letsEncrypt.png" />
             </div>
           </div>
         </div>

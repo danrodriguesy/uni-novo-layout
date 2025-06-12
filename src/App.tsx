@@ -30,7 +30,7 @@ function App() {
       <CarrosselNossasMarcas />
       <MaisVendidos
         titulo="Mais Vendidos"
-        imagem="src/assets/componentes/MaisVendidos/imagens/mais-vendidos.png"
+        imagem="/imagens/maisVendidos/mais-vendidos.png"
         textoBotao="Ver Mais"
       />
       <BannerHorizontal />

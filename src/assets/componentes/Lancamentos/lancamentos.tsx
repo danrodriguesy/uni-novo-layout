@@ -31,7 +31,7 @@ function Lancamentos() {
   return (
     <>
       <div className={styles.containerTitle}>
-        <img className={styles.icon} src="src/assets/componentes/Lancamentos/imagens/lancamento.png" />
+        <img className={styles.icon} src="" />
         <h2 className={styles.title}> Lançamentos</h2>
       </div>
 
@@ -39,13 +39,13 @@ function Lancamentos() {
         <div className={styles.containerBanner}>
           <img
             className={styles.bannerLateral}
-            src="src/assets/componentes/Lancamentos/imagens/banner-vertical-lancamentos.png"
+            src="/imagens/lancamentos/banner-vertical-lancamentos.png"
             alt="Banner Lançamentos"
           />
         </div>
 
         <div className={styles.wrapper}>
-          <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="src\assets\componentes\Lancamentos\imagens\arrow-left.png" /></button>
+          <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="/imagens/lancamentos/arrow-left.png" /></button>
 
           <div className={styles.sliderArea}>
             <motion.div
@@ -60,7 +60,7 @@ function Lancamentos() {
                     <CiHeart className={styles.iconHeart} />
                   </div>
                   <div className={styles.containerImagem}>
-                    <img src="src/assets/componentes/Lancamentos/imagens/imagem-produto.png" className={styles.imagemProduto} />
+                    <img src="/imagens/lancamentos/imagem-produto.png" className={styles.imagemProduto} />
                   </div>
                   <div className={styles.containerRef}>
                     <span>Ref: {produto.ref}</span>
@@ -86,7 +86,7 @@ function Lancamentos() {
             </motion.div>
           </div>
 
-          <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="src\assets\componentes\Lancamentos\imagens\arrow-right.png" /></button>
+          <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="/imagens/lancamentos/arrow-right.png" /></button>
 
           <div className={styles.dots}>
             {Array.from({ length: produtos.length - VISIBLE_CARDS + 1 }).map((_, i) => (

@@ -6,7 +6,7 @@ function FiltroInteligente(){
         <>
             <div className={styles.container}>
                 
-                <h2 className={styles.title}><img className={styles.icon} src="src/assets/componentes/filtroInteligente/imagens/icon-filtro-inteligente.png" /> Filtro Inteligente</h2>
+                <h2 className={styles.title}><img className={styles.icon} src="/imagens/filtroInteligente/icon-filtro-inteligente.png" /> Filtro Inteligente</h2>
                 <div>
                     <Fields />
                 </div>

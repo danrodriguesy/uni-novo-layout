@@ -6,7 +6,7 @@ function newsletter(){
             <div className={styles.container}>
                 <div className={styles.contentnewsletter}>
                     <div className={styles.contentItens}>
-                        <img className={styles.icone} src="src\assets\componentes\newsletter\imagens\icone.png" />
+                        <img className={styles.icone} src="/imagens/newsletter/icone.png" />
                         <span className={styles.texto}>Quer receber promoções e novidades?</span>
                     </div>
                     <div className={styles.fileds}>

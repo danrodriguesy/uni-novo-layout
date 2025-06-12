@@ -30,7 +30,7 @@ function CarrosselProdutos() {
 
   return (
     <div className={styles.wrapper}>
-      <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="src\assets\componentes\carrosselFull\imagens\arrow-left.png" /></button>
+      <button className={`${styles.seta} ${styles.left}`} onClick={prev}><img className={styles.arrowLeft} src="/imagens/universalRecomenda/arrow-left.png" /></button>
 
       <div className={styles.sliderArea}>
         <motion.div
@@ -45,7 +45,7 @@ function CarrosselProdutos() {
                 <CiHeart className={styles.iconHeart} />
               </div>
               <div className={styles.containerImagem}>
-                <img src="src/assets/componentes/Lancamentos/imagens/imagem-produto.png" className={styles.imagemProduto} />
+                <img src="/imagens/universalRecomenda/imagem-produto.png" className={styles.imagemProduto} />
               </div>
               <div className={styles.containerRef}>
                 <span>Ref: {produto.ref}</span>
@@ -70,7 +70,7 @@ function CarrosselProdutos() {
           ))}
         </motion.div>
       </div>
-      <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="src\assets\componentes\carrosselFull\imagens\arrow-right.png" /></button>
+      <button className={`${styles.seta} ${styles.right}`} onClick={next}><img className={styles.arrowRight} src="/imagens/universalRecomenda/arrow-right.png" /></button>
       <div className={styles.dots}>
         {Array.from({ length: produtos.length - VISIBLE + 1 }).map((_, i) => (
           <button

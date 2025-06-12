@@ -3,7 +3,7 @@ import styles from './logo.module.css';
 function Logo(){
     return (
         <>
-            <img className={styles.logo} src="src/assets/componentes/header/imagens/logo-universal.png" />   
+            <img className={styles.logo} src="/imagens/header/logo-universal.png" />
         </>
     )
 }

@@ -6,4 +6,5 @@
 
 .container > img {
     width: 22px;
+    cursor: pointer;
 }

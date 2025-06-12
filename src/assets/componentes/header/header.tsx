@@ -12,7 +12,6 @@ function Header(){
                     <Logo />
                     <Menu />
                 </div>
-                
                 <Search />
                 <IconsWithContact />
             </div>

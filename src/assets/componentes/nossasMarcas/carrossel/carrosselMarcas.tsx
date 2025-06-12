@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import styles from './carrosselMarcas.module.css';
 
 const marcas = [
-  { id: 1, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/amortex.png', alt: 'Amortex' },
-  { id: 2, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/carto.png', alt: 'Carto' },
-  { id: 3, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/lougan.png', alt: 'Lougan' },
-  { id: 4, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/micro.png', alt: 'Micro' },
-  { id: 5, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/uni1000.png', alt: 'UNI 1000' },
-  { id: 6, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/unick.png', alt: 'Unick' },
-  { id: 7, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/uniflex.png', alt: 'Uniflex' },
-  { id: 8, src: 'src/assets/componentes/nossasMarcas/carrossel/imagens/universal.png', alt: 'Universal' }
+  { id: 1, src: '/imagens/nossasMarcas/amortex.png', alt: 'Amortex' },
+  { id: 2, src: '/imagens/nossasMarcas/carto.png', alt: 'Carto' },
+  { id: 3, src: '/imagens/nossasMarcas/lougan.png', alt: 'Lougan' },
+  { id: 4, src: '/imagens/nossasMarcas/micro.png', alt: 'Micro' },
+  { id: 5, src: '/imagens/nossasMarcas/uni1000.png', alt: 'UNI 1000' },
+  { id: 6, src: '/imagens/nossasMarcas/unick.png', alt: 'Unick' },
+  { id: 7, src: '/imagens/nossasMarcas/uniflex.png', alt: 'Uniflex' },
+  { id: 8, src: '/imagens/nossasMarcas/universal.png', alt: 'Universal' }
 ];
 
 const CARD_WIDTH = 180;

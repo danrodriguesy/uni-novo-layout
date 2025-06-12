@@ -4,9 +4,9 @@ function bandeirasIdiomas(){
     return (
         <>
             <div className={styles.container}>
-                <img src="src\assets\componentes\topBar\bandeiras\imagens\portugues.png" alt="Idioma em português" />
-                <img src="src\assets\componentes\topBar\bandeiras\imagens\ingles.png" alt="Idioma em inglês" />
-                <img src="src\assets\componentes\topBar\bandeiras\imagens\espanhol.png" alt="Idioma em espanhol" />
+                <img src="imagens/topBar/portugues.png" alt="Idioma em português" />
+                <img src="imagens/topBar/ingles.png" alt="Idioma em inglês" />
+                <img src="imagens/topBar/espanhol.png" alt="Idioma em espanhol" />
             </div>
         </>
     )
