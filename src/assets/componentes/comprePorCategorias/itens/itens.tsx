@@ -4,10 +4,10 @@ function Itens(){
     return (
         <> 
             <div className={styles.containerImagens}>
-                <img src="src\assets\componentes\comprePorCategorias\itens\imagens\item1.png" />
-                <img src="src\assets\componentes\comprePorCategorias\itens\imagens\item2.png" />
-                <img src="src\assets\componentes\comprePorCategorias\itens\imagens\item3.png" />
-                <img src="src\assets\componentes\comprePorCategorias\itens\imagens\item4.png" />
+                <img src="/imagens/comprePorCategorias/item1.png" />
+                <img src="/imagens/comprePorCategorias/item2.png" />
+                <img src="/imagens/comprePorCategorias/item3.png" />
+                <img src="/imagens/comprePorCategorias/item4.png" />
             </div>
         </>
     )
