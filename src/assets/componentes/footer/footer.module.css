@@ -2,11 +2,109 @@
     width: 758px;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     justify-content: center;
     margin: auto;
+    gap: 2rem;
     padding: 2rem 0;
+    align-items: center;
 }
 .logo {
-    width: 256px;
+    width: 216px;
+    height: 50px;
+}
+.hr {
+    width: 28%;               /* Garante que ocupe toda a largura */
+    height: 1px;               /* Espessura da linha */
+    background-color: #707070; /* Cor desejada */
+    border: none;              /* Remove borda padrão */
+    margin: 2rem 0;   
+}
+.containerLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 758px;
+    margin: auto;
+    gap: 4rem;
+}
+.listaLinks { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.listaLinks > li > a { 
+    text-decoration: none;
+    color: #707070;
+    font-size: 14px;
+}
+.titleList {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 500;
+}
+.icones {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.icones > a > img { 
+    width: 35px;
+}
+.sac {
+    width: 45px;
+    cursor: pointer;
+}
+.formasPagamento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #262626;
+    padding: 1rem;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.titleFormasPagamento {
+    color: #FFF;
+    font-size: 18px;
+}
+.bandeirasPagamento {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.bandeirasPagamento > img {
+    width: 45px;
+}
+.containerCopyright {
+    display: flex;    
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;;
+}
+.copyright {
+    display: flex;
+    flex-direction: row;
+    width: 1290px;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-around;
+    margin: auto;
+}.parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.logos > img {
+    width: 40px;
 }

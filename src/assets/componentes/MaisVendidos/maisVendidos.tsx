@@ -1,5 +1,5 @@
-import styles from './maisVendidos.module.css';
-import CarrosselMaisVendidos from './maisVendidosCarrossel/carrosselMaisVendidos';
+import styles from "./maisVendidos.module.css";
+import CarrosselMaisVendidos from "./maisVendidosCarrossel/carrosselMaisVendidos";
 
 interface MaisVendidosProps {
   titulo: string;
@@ -8,16 +8,31 @@ interface MaisVendidosProps {
   onClickBotao?: () => void;
 }
 
-function MaisVendidos({ titulo, imagem, textoBotao, onClickBotao }: MaisVendidosProps) {
+function MaisVendidos({
+  titulo,
+  imagem,
+  textoBotao,
+  onClickBotao,
+}: MaisVendidosProps) {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.title}>
-          <img className={styles.icone} src={imagem} alt={titulo} />
-          <h2>{titulo}</h2>
+        <div className={styles.left}></div>
+
+        <div className={styles.center}>
+          <div className={styles.title}>
+            <img className={styles.icone} src={imagem} alt={titulo} />
+            <h2>{titulo}</h2>
+          </div>
         </div>
-        <button className={styles.btn} onClick={onClickBotao}>{textoBotao}</button>
+
+        <div className={styles.right}>
+          <button className={styles.btn} onClick={onClickBotao}>
+            {textoBotao}
+          </button>
+        </div>
       </div>
+
       <br />
       <CarrosselMaisVendidos />
     </>

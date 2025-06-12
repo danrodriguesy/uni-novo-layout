@@ -1,28 +1,53 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    justify-content: flex-end;
-    width: 1290px;
-    gap: 19rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1048px;
+  margin: 0 auto;
+  gap: 1rem;
 }
+
+/* Espaço reservado — opcional */
+.left {
+  flex: 1;
+}
+
+/* Centralizado via flex e texto alinhado */
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botão no fim da linha */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Título com ícone */
 .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  flex-wrap: wrap;
 }
+
 .icone {
-    width: 38px;
-    height: auto;
+  width: 44px;
+  height: auto;
+  max-width: 100%;
 }
+
 .btn {
+    background-color: #FFF;
     border: 1px solid #ADADAD;
+    padding: 10px 2rem;
+    border-radius: 5px;
     color: #707070;
-    padding: 0.5rem 2.5rem;
-    font-size: 14px;
-    border-radius: .5rem;
-    background-color: #FFF;;
 }

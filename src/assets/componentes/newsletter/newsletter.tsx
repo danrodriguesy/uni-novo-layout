@@ -12,6 +12,10 @@ function newsletter(){
                     <div className={styles.fileds}>
                         <input type="text" className={styles.input} placeholder="Digite seu e-mail" />
                         <button className={styles.btn}>Enviar</button>
+                        <div className={styles.checkboxPolitica}>
+                            <input type="checkbox" /> 
+                            <span className={styles.textoPolitica}>Ao se cadastrar, você concorda com a nossa <a href="" className={styles.linkPolitica}>Política de privacidade</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
