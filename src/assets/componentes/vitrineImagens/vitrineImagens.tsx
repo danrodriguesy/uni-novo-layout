@@ -7,17 +7,17 @@ function vitrineImagens() {
         <div className={styles.div1}>
           <img
             className={`${styles.img1} ${styles.imageZoom}`}
-            src="src\assets\componentes\vitrineImagens\imagens\celular.png"
+            src="/imagens/vitrineImagens/celular.png"
           />
         </div>
         <div className={styles.div2}>
           <img
             className={`${styles.img2} ${styles.imageZoom}`}
-            src="src\assets\componentes\vitrineImagens\imagens\selecao-pecas-itens-linha-pesada.png"
+            src="/imagens/vitrineImagens/selecao-pecas-itens-linha-pesada.png"
           />
           <img
             className={`${styles.img3} ${styles.imageZoom}`}
-            src="src\assets\componentes\vitrineImagens\imagens\selecao-pecas-vw-gol.png"
+            src="/imagens/vitrineImagens/selecao-pecas-vw-gol.png"
           />
         </div>
         
