@@ -31,7 +31,7 @@ function Lancamentos() {
   return (
     <>
       <div className={styles.containerTitle}>
-        <img className={styles.icon} src="" />
+        <img className={styles.icon} src="/imagens/lancamentos/lancamento.png" />
         <h2 className={styles.title}> Lançamentos</h2>
       </div>
 

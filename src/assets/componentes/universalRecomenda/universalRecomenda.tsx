@@ -8,7 +8,7 @@ function UniversalRecomenda() {
       <div className={styles.center}>
         <div className={styles.title}>
           <img
-            src="src/assets/componentes/universalRecomenda/imagens/icone.png"
+            src="/imagens/universalRecomenda/icone.png"
             className={styles.icone}
             alt="Ícone Universal Recomenda"
           />

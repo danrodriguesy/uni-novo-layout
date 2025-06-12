@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slider.module.css';
 
 const banners = [
-  { id: 1, img: 'src/assets/componentes/SliderBannerPrincipal/imagens/banner.png', alt: 'Banner 1' },
-  { id: 2, img: 'src/assets/componentes/SliderBannerPrincipal/imagens/banner.png', alt: 'Banner 2' },
-  { id: 3, img: 'src/assets/componentes/SliderBannerPrincipal/imagens/banner.png', alt: 'Banner 3' },
+  { id: 1, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 1' },
+  { id: 2, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 2' },
+  { id: 3, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 3' },
 ];
 
 function Banner() {
