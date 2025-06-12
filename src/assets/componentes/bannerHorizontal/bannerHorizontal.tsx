@@ -4,7 +4,7 @@ function bannerHorizontal(){
     return (
         <>
             <div className={styles.containerBanner}>
-                <img className={styles.banner} src="/bannerHorizontal/banner.png" />    
+                <img className={styles.banner} src="/bannerHorizontal/banner.png" />
             </div>
             
         </>
