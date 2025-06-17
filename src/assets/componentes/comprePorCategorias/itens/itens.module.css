@@ -10,3 +10,15 @@
     height: auto;
     cursor: pointer;
 }
+
+@media (max-width: 600) {
+    .item {
+        width: 100%; /* ocupa 100% da largura do carrossel */
+        height: auto;
+        object-fit: contain;
+    }
+    .containerImagens > img { 
+        width: 200px;
+    }
+
+}

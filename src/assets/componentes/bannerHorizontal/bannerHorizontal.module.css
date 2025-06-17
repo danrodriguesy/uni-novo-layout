@@ -9,3 +9,15 @@
 .banner {
     width: 1060px;
 }
+
+@media (max-width: 600px) {
+    .containerBanner {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+   .banner {
+        width: 100%;
+        border-radius: 0;
+   } 
+}

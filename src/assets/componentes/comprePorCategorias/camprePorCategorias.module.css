@@ -1,11 +1,77 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
+
 .icon {
-    width: 38px;
-    height: auto;
+  width: 38px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Mobile carousel only */
+@media (max-width: 768px) {
+  .header {
+    margin-top: 2rem;
+  }
+  .sliderMobileWrapper {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .sliderMobile {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .sliderMobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sliderTrack {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding: 0 1rem;
+  }
+
+  .sliderTrack > * {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .dot:hover {
+    background: #ccc;
+  }
+
+  .active {
+    background-color: #000;
+  }
 }

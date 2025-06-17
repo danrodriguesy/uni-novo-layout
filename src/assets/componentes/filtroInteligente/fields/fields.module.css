@@ -36,3 +36,13 @@
   pointer-events: none;
   z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .select {
+    border-radius: 10px;
+  }
+}

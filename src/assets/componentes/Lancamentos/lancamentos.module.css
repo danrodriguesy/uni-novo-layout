@@ -16,6 +16,8 @@
 .bannerLateral {
   width: 235px;
   height: auto;
+  display: block;
+  margin-left: 1rem;
 }
 
 .icon {
@@ -27,13 +29,20 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;  
-  width: 1290px;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1290px;
   margin: auto;
+  overflow-x: auto;
+  padding: 0 1rem;
 }
 
 .containerBanner {
   flex-shrink: 0;
+  display: block;
+  position: static !important;
+  top: auto !important;
 }
 
 /* Carrossel */
@@ -46,12 +55,25 @@
 
 .sliderArea {
   overflow: hidden;
-  width: 786px; /* 3 cards * 262px */
+  width: 786px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .cardTrack {
   display: flex;
-  gap: 0;
+  width: fit-content;
+}
+
+.cardTrackMobile {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .card {
@@ -63,9 +85,15 @@
   width: 212px;
   margin-left: 9px;
   border-radius: 1rem;
-  height: 500px; /* para manter a mesma altura em todos */
+  height: 500px;
   flex: 0 0 auto;
   position: relative;
+}
+
+.mobileCard {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 262px;
 }
 
 .iconHeart {
@@ -112,29 +140,28 @@
 }
 
 .containerTituloProduto {
-      display: flex;
-    justify-content: center;
-    text-align: justify;
-    margin: auto;
-    font-weight: 500;
-    font-size: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin: auto;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .tituloProduto {
-     display: -webkit-box;
-  -webkit-line-clamp: 2; /* ou 3 linhas */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
 .containerStars {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  gap: 8px;
 }
 
 .starAmarela {
@@ -193,14 +220,13 @@
   right: -30px;
 }
 .arrowLeft {
-    width: 44px;
+  width: 44px;
 }
 .arrowRight {
-    width: 44px;
+  width: 44px;
 }
 .dots {
   display: flex;
-  justify-content: center;
   gap: 8px;
   margin-top: 1rem;
   background-color: #FFF;
@@ -221,65 +247,18 @@
   background-color: #454545;
 }
 
-@media (max-width: 767px) {
-  .seta {
-    display: none;
-  }
-  
+@media (max-width: 600px){
   .container {
-    justify-content:start;
-    width: auto;
-    margin-left: 1rem;
-  }
-}
-
-.sliderAreaMobile {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  padding-bottom: 1rem;
-}
-
-.sliderAreaMobile::-webkit-scrollbar {
-  display: none;
-}
-.sliderAreaMobile {
-  scrollbar-width: none;
-}
-
-.cardTrackMobile {
-  display: flex;
-  gap: 1rem;
-}
-
-.cardTrackMobile .card {
-  scroll-snap-align: start;
-}
-
-@media (max-width: 767px) {
-  .seta {
-    display: none;
-  }
-
-  .container {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-    overflow: hidden;
     width: 100%;
-    padding: 0 0.5rem;
-    margin: 0;
   }
-
   .containerBanner {
-    flex-shrink: 0;
-    width: 233px;
+    display: none !important;
   }
 
-  .bannerLateral {
+  .wrapper {
+    align-items: center;
     width: 100%;
-    height: auto;
+    margin-bottom: 2rem;
   }
 
   .sliderAreaMobile {
@@ -297,12 +276,31 @@
 
   .cardTrackMobile {
     display: flex;
-    gap: 0rem;
-    
+    flex-direction: row;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow-x: auto;
   }
 
-  .cardTrackMobile .card {
-    flex: 0 0 10%;
+  .mobileCard {
+    flex: 0 0 auto;
     scroll-snap-align: start;
+    width: 262px;
   }
+
+  .cardsFlex {
+    display: flex;
+    flex-direction: row;
+  }
+  .verMaisBtn {
+    margin-top: 2rem;
+    background-color: #FFF;
+    border: 1px solid #ADADAD;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    color: #707070;
+  }  
 }
+

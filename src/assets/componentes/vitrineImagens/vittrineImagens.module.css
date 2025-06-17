@@ -35,3 +35,62 @@
 .imageZoom:hover {
   transform: scale(1.1); /* aumenta 10% ao passar o mouse */
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .sliderMobileWrapper {
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .sliderMobile {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .sliderMobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sliderTrack {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .slideItem {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .dot:hover {
+    background: #ccc;
+  }
+
+  .active {
+    background-color: #000;
+  }
+}

@@ -86,7 +86,7 @@
     margin: auto;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
     background-color: #000;
     color: #FFF;
     font-size: 12px;;
@@ -107,4 +107,76 @@
 }
 .logos > img {
     width: 40px;
+}
+
+@media (max-width: 758px) {
+    .hr {
+        width: 60px;
+    }
+    .container {
+        width: 100%;
+    }
+    .containerLinks {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem;
+    }
+    .accordionHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        padding: 0 1rem;
+        padding: 1rem;
+        border-bottom: 2px solid #DDD;
+        color: #7A7A7A;
+        font-weight: 600;
+    }
+    .listaLinks {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .listaLinks > li > a { 
+        padding: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .accordionHeader > button {
+        border: none;
+        background: none;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .formasPagamento {
+        flex-direction: column;
+    }
+    .titleFormasPagamento {
+        font-size: 13px;
+    }
+    .copyright {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sac {
+        display: none;
+    }
+    .nossasRedes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 0;
+    }
+    .icones > a {
+        border: 0;
+    }
 }
