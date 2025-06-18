@@ -102,8 +102,8 @@ function Lancamentos() {
 
           <div className={isMobile ? styles.sliderAreaMobile : styles.sliderArea}>
             {isMobile ? (
-              <div className={styles.sliderAreaMobile} ref={scrollRef}>
-                <div className={styles.cardTrackMobile}>
+              <div className={styles.sliderAreaMobile}>
+                <div className={styles.cardTrackMobile} ref={scrollRef}>
                   {produtos.map((produto) => (
                     <div
                       className={`${styles.card} ${styles.mobileCard}`}

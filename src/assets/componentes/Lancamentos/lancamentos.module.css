@@ -281,6 +281,8 @@
     flex-direction: row;
     gap: 1rem;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     padding-left: 1rem;
     padding-right: 1rem;
     overflow-x: auto;
