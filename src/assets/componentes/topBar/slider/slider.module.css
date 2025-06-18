@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 767px) {
+  .texto {
+    font-size: 14px;
+  }
   .wrapper { 
     width: -webkit-fill-available;
     display: flex;
@@ -42,8 +45,5 @@
     margin-right: 0;
     background-color: #707070;
     padding: 0.5rem;
-  }
-  .texto {
-    font-size: 14px;
   }
 }
