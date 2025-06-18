@@ -34,21 +34,18 @@
   position: relative;
   width: 500px;
 }
-
 .input {
   width: 100%;
-  padding: 0.5rem 5rem 0.5rem 1rem; /* espaço à direita pro botão */
-  font-size: 14px;
+  padding: 0.6rem;
+  font-size: 13px;
   border: 1px solid #ccc;
   border-radius: 2rem;
   outline: 0;
 }
-
 .btn {
   position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: -13px;
+  top: 6px;
   background-color: #BB0715;
   border: none;
   font-size: 14px;
