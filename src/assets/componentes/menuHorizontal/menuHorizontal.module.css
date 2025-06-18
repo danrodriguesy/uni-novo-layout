@@ -1,0 +1,27 @@
+.container {
+    background-color: #AE1F21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    color: #FFF;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.containerLista {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    font-size: 13px;
+    width: 1290px;
+    justify-content: center;
+    font-weight: 500;
+}
+.containerLista > li > a { 
+    color: #FFF;
+    text-decoration: none;
+}
+.containerLista > li > strong { 
+    cursor: default;
+}

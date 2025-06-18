@@ -1,0 +1,7 @@
+.imagemProduto {
+    height: auto;
+    width: 450px;
+    border: 1px solid #ADADAD;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}

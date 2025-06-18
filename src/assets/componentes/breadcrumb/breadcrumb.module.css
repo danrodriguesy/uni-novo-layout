@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.content {
+    width: 1290px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 13px;
+    margin: auto;
+    margin-left: 11rem;
+}
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
