@@ -28,7 +28,7 @@ function App() {
         <SliderBannerPrincipal />
         <NossasMarcas />
         <CarrosselNossasMarcas />
-        <Lancamentos />  
+        <Lancamentos />
         <BannerHorizontal />
         <FiltroInteligente />
         <ComprePorCategorias />

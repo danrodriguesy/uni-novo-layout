@@ -135,7 +135,6 @@
     }
     .listaLinks {
         width: 100%;
-        margin-bottom: 1rem;
     }
     .listaLinks > li > a { 
         padding: 0.9rem;
@@ -152,6 +151,7 @@
     }
     .formasPagamento {
         flex-direction: column;
+        margin-top: 0rem;
     }
     .titleFormasPagamento {
         font-size: 13px;
@@ -175,8 +175,25 @@
         flex-direction: row;
         align-items: center;
         border: 0;
+        background-color: #262626;
+        padding: 1rem 0rem;
+        width: 100%;
+        justify-content: space-between;
     }
+    .nossasRedes > li > span {
+        color: #FFF;
+     }
     .icones > a {
         border: 0;
+    }
+    .icones > a > img {
+        width: 40px;
+    }
+    .listaLinks > li > a {
+        border: none;
+        padding: 0;
+    }
+    .titleList {
+        font-size: 15px;
     }
 }

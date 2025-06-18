@@ -250,6 +250,7 @@
 @media (max-width: 600px){
   .container {
     width: 100%;
+    padding: 0;
   }
   .containerBanner {
     display: none !important;
@@ -259,6 +260,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
+    overflow-x: hidden;
   }
 
   .sliderAreaMobile {
@@ -282,6 +284,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     overflow-x: auto;
+    margin-left: 1rem;
   }
 
   .mobileCard {
