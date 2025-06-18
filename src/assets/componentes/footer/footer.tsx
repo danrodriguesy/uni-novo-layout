@@ -62,7 +62,7 @@ function Footer() {
         {sections.map((section, index) => (
           <ul
             key={index}
-            className={`${styles.listaLinks} ${isMobile ? styles.mobileList : ""}`}
+            className={`${styles.listaLinks} ${styles.containerItens} ${isMobile ? styles.mobileList : ""}`}
           >
             <li className={styles.accordionHeader}>
               <span className={styles.accordionTitle}>{section.title}</span>

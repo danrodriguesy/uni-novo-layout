@@ -134,7 +134,7 @@
         font-weight: 600;
     }
     .listaLinks {
-        width: 100%;
+        width: -webkit-fill-available;
     }
     .listaLinks > li > a {
         display: flex;
@@ -148,6 +148,10 @@
         font-size: 22px;
         font-weight: 300;
     }
+    .containerItens > li > a {
+        padding: 0.5rem 1rem;
+    }
+    
     .formasPagamento {
         flex-direction: column;
         margin-top: 0rem;
@@ -193,7 +197,7 @@
         border-bottom: 1px solid #f1f1f1;
     }
     .titleList {
-        font-size: 20px;
+        font-size: 17px;
         color: #FFF;
         padding: 0 1rem;
         font-weight: 600;
