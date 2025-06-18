@@ -136,8 +136,7 @@
     .listaLinks {
         width: 100%;
     }
-    .listaLinks > li > a { 
-        padding: 0.9rem;
+    .listaLinks > li > a {
         display: flex;
         flex-direction: column;
         gap: 1px;
@@ -167,9 +166,6 @@
         flex-direction: row;
         align-items: center;
     }
-    .sac {
-        display: none;
-    }
     .nossasRedes {
         display: flex;
         flex-direction: row;
@@ -180,9 +176,13 @@
         width: 100%;
         justify-content: space-between;
     }
-    .nossasRedes > li > span {
-        color: #FFF;
-     }
+    
+     .nossasRedes > li.icones > a  {
+        border: 0 !important;
+    }
+    .icones {
+        padding: 0 1rem;
+    }
     .icones > a {
         border: 0;
     }
@@ -190,10 +190,12 @@
         width: 40px;
     }
     .listaLinks > li > a {
-        border: none;
-        padding: 0;
+        border-bottom: 1px solid #f1f1f1;
     }
     .titleList {
-        font-size: 15px;
+        font-size: 20px;
+        color: #FFF;
+        padding: 0 1rem;
+        font-weight: 600;
     }
 }

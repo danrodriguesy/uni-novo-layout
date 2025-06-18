@@ -85,7 +85,28 @@ function Footer() {
           </ul>
         ))}
 
-        <ul className={ `${styles.listaLinks} ${styles.nossasRedes}` }>
+
+        {isMobile && 
+          <ul className={ `${styles.listaLinks} ${styles.nossasRedes}` }>
+          <li>
+            <span className={styles.titleList}>Nossas Redes</span>
+          </li>
+          <li className={styles.icones}>
+            <a href="#">
+              <img src="/imagens/footer/imagens/facebook-mobile.png" />
+            </a>
+            <a href="#">
+              <img src="/imagens/footer/imagens/instagram-mobile.png" />
+            </a>
+            <a href="#">
+              <img src="/imagens/footer/imagens/youtube-mobile.png" />
+            </a>
+          </li>
+        </ul>  
+        }
+
+        {!isMobile && 
+          <ul className={ `${styles.listaLinks} ${styles.nossasRedes}` }>
           <li>
             <span className={styles.titleList}>Nossas Redes</span>
             <br />
@@ -110,6 +131,8 @@ function Footer() {
             />
           </li>
         </ul>
+        }
+        
       </div>
 
       <div className={styles.formasPagamento}>
