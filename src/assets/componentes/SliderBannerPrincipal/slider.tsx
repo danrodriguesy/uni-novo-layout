@@ -21,7 +21,8 @@ function Banner() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const next = () => setIndex((prev) => (prev + 1) % banners.length);
-  const prev = () => setIndex((prev - 1 + banners.length) % banners.length);
+  const prev = () => setIndex((prev) => (prev - 1 + banners.length) % banners.length);
+
 
   const scrollTo = (i: number) => {
     if (scrollRef.current) {
