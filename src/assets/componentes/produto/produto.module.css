@@ -1,6 +1,5 @@
 .containerInformacoesProduto {
     display: flex;
     flex-direction: row;
-    width: 1290px;
-    justify-content: space-around;
+    justify-content:space-evenly;
 }

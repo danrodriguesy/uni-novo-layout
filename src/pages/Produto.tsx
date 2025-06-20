@@ -8,7 +8,7 @@ import MenuHorizontal from '../assets/componentes/menuHorizontal/menuHorizontal'
 import Breadcrumb from '../assets/componentes/breadcrumb/breadcrumb';
 import Slider from '../assets/componentes/produto/slider/sliderProduto';
 import styles from '../assets/componentes/produto/produto.module.css';
-
+import InformacaoDoProduto from '../assets/componentes/produto/infoProduto/infoProduto';
 
 function Produto(){
   return (
@@ -19,7 +19,7 @@ function Produto(){
       <Breadcrumb />
       <div className={styles.containerInformacoesProduto}>
         <Slider />
-        
+        <InformacaoDoProduto />
       </div>
     </>
   )
