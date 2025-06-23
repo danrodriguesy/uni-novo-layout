@@ -9,6 +9,8 @@ import Breadcrumb from '../assets/componentes/breadcrumb/breadcrumb';
 import Slider from '../assets/componentes/produto/slider/sliderProduto';
 import styles from '../assets/componentes/produto/produto.module.css';
 import InformacaoDoProduto from '../assets/componentes/produto/infoProduto/infoProduto';
+import CarrosselFull from '../assets/componentes/carrosselFull/carrosselFull';
+import DescricaoDetalhada from '../assets/componentes/produto/descricaoDetalhada/descricaoDetalhada';
 
 function Produto(){
   return (
@@ -21,6 +23,16 @@ function Produto(){
         <Slider />
         <InformacaoDoProduto />
       </div>
+      <div className={styles.titleCompreJunto}>
+          <img
+            src="/imagens/produto/iconeCompreJunto.png"
+            className={styles.icone}
+            alt="Ícone Compre Junto"
+          />
+          <h2>Compre Junto</h2>
+      </div>
+      <CarrosselFull />
+      <DescricaoDetalhada />
     </>
   )
 }

@@ -23,7 +23,9 @@ function SliderProduto() {
   return (
     <div className={styles.container}>
       <div className={styles.imagemPrincipalWrapper}>
-        <button onClick={anterior} className={styles.seta}>‹</button>
+        <button onClick={anterior} className={styles.seta}>
+          <img className={styles.arrowLeft} src='/imagens/produto/arrow-left.png' />
+        </button>
 
         <div className={styles.imagemContainer}>
           <AnimatePresence mode="wait">
@@ -40,7 +42,9 @@ function SliderProduto() {
           </AnimatePresence>
         </div>
 
-        <button onClick={proximo} className={styles.seta}>›</button>
+        <button onClick={proximo} className={styles.seta}>
+          <img className={styles.arrowRight} src="/imagens/produto/arrow-right.png" />
+        </button>
       </div>
 
       <div className={styles.miniaturas}>

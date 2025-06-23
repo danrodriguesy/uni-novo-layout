@@ -7,7 +7,7 @@
 
 .imagemPrincipalWrapper {
   position: relative;
-  width: 480px;
+  width: 540px;
   height: auto;
 }
 
@@ -17,47 +17,55 @@
   object-fit: contain;
   border-radius: 8px;
   border: 1px solid #ccc;
+  padding: 4rem;
+  box-sizing: border-box;
 }
 
 .seta {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
+  background: none;
   border: none;
-  font-size: 24px;
-  padding: 8px;
   cursor: pointer;
   z-index: 1;
-  border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.arrowLeft, .arrowRight {
+  width: 50px;
 }
 
 .seta:first-of-type {
-  left: -20px;
+  left: -42px;
 }
 
 .seta:last-of-type {
-  right: -20px;
+  right: -42px;
 }
 
 .miniaturas {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .miniatura {
-  width: 60px;
-  height: 60px;
+  width: 122px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
   object-fit: contain;
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 6px;
   transition: border 0.3s ease;
+  border: 1px solid #ADADAD;
 }
 
 .ativo {
-  border-color: #CCC;
+  border-color: #333;
 }

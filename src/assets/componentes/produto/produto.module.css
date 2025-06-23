@@ -1,5 +1,19 @@
 .containerInformacoesProduto {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-around;
+    width: 1290px;
+    margin: auto;
+}
+.titleCompreJunto {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.icone {
+    width: 50px;
 }

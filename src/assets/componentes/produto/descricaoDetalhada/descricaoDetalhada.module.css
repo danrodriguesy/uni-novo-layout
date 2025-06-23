@@ -1,0 +1,65 @@
+.containerDescricaoDetalhada {
+    width: 1115px;
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    border: 1px solid #ADADAD;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.containerDescricaoDetalhada h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.containerDescricaoDetalhada p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.hr {
+    border: 1px solid #E5E5E5;   
+}
+.titleInformativo {
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.containerCards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #C5C5C5;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 44%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.headerCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.spanCard {
+    font-size: 13px;
+}
+.titleCard {
+    font-size: 14px;
+    font-weight: 500;
+}
