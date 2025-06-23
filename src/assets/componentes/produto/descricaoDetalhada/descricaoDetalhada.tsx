@@ -1,4 +1,5 @@
 import styles from './descricaoDetalhada.module.css';
+import { FaStar } from "react-icons/fa";
 
 function DescricaoDetalhada() { 
     return(
@@ -73,6 +74,28 @@ function DescricaoDetalhada() {
                         </div>
                         <span className={styles.spanCard}>Inox/Preto</span>
                     </div>
+                </div>
+                <hr className={styles.hr} />
+                <h2 className={styles.titleInformativo}>Categoria</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div className={styles.containerAvaliacaoProduto}>
+                <div className={styles.headerAvaliacaoProduto}>
+                    <h2 className={styles.titleAvaliacaoProduto}>Avaliação do Produto</h2>
+                    <div className={styles.containerStars}>
+                        <FaStar fontSize={25} className={styles.starCinza} />
+                        <FaStar fontSize={25} className={styles.starCinza} />
+                        <FaStar fontSize={25} className={styles.starCinza} />
+                        <FaStar fontSize={25} className={styles.starCinza} />
+                        <FaStar fontSize={25} className={styles.starCinza} />
+                    </div>
+                </div>
+                <div className={styles.containerComentarios}>
+                    <p>Seja o primeiro a avaliar este produto!</p>
+                </div>
+                <div className={styles.containerAvaliacoesBtn}>
+                    <FaStar fontSize={25} className={styles.starCinza} />
+                    <span className={styles.avaliarProduto}>Avaliar este produto</span>
                 </div>
             </div>
         </>

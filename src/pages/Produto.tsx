@@ -1,7 +1,7 @@
 import TopBar from '../assets/componentes/topBar/topBar';
 import Header from '../assets/componentes/header/header';
-//import Footer from '../assets/componentes/footer/footer';
-//import Newsletter from '../assets/componentes/newsletter/newsletter';
+import Footer from '../assets/componentes/footer/footer';
+import Newsletter from '../assets/componentes/newsletter/newsletter';
 import '../../src/App.css';
 import '../../src/index.css';
 import MenuHorizontal from '../assets/componentes/menuHorizontal/menuHorizontal';
@@ -33,6 +33,8 @@ function Produto(){
       </div>
       <CarrosselFull />
       <DescricaoDetalhada />
+      <Newsletter />
+      <Footer />
     </>
   )
 }
