@@ -58,6 +58,7 @@
 }
 .spanCard {
     font-size: 13px;
+    font-weight: 500;
 }
 .titleCard {
     font-size: 14px;
@@ -93,6 +94,7 @@
 }
 .starCinza {
     color: #E0E0E0;
+    cursor: pointer;
 }
 .containerComentarios {
     display: flex;
@@ -114,4 +116,16 @@
 }
 .avaliarProduto {
     font-size: 13px;
+}
+
+@media (max-width: 599px) {
+    .containerDescricaoDetalhada {
+        width: 90%;
+        
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .containerCards {
+        flex-direction: column;
+    }
 }

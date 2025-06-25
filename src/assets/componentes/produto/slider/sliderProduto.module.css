@@ -31,7 +31,8 @@
   z-index: 1;
 }
 
-.arrowLeft, .arrowRight {
+.arrowLeft,
+.arrowRight {
   width: 50px;
 }
 
@@ -63,9 +64,41 @@
   cursor: pointer;
   border-radius: 6px;
   transition: border 0.3s ease;
-  border: 1px solid #ADADAD;
+  border: 1px solid #adadad;
 }
 
 .ativo {
   border-color: #333;
+}
+
+@media (max-width: 599px) {
+  .seta {
+    display: none;
+  }
+  .imagemProduto {
+    width: 100%;
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .activeDot {
+    background: #333;
+  }
+  .imagemPrincipalWrapper {
+    width: 90%;
+  }
 }

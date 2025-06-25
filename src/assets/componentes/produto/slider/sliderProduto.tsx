@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './sliderProduto.module.css';
+import useIsMobile from '../../../hooks/useIsMobile';
 
 const imagens = [
   '/imagens/produto/fotoProduto.png',
@@ -11,6 +12,7 @@ const imagens = [
 
 function SliderProduto() {
   const [indexAtivo, setIndexAtivo] = useState(0);
+  const isMobile = useIsMobile();
 
   const anterior = () => {
     setIndexAtivo(prev => (prev === 0 ? imagens.length - 1 : prev - 1));
@@ -47,17 +49,29 @@ function SliderProduto() {
         </button>
       </div>
 
-      <div className={styles.miniaturas}>
-        {imagens.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Miniatura ${i + 1}`}
-            onClick={() => setIndexAtivo(i)}
-            className={`${styles.miniatura} ${i === indexAtivo ? styles.ativo : ''}`}
-          />
-        ))}
-      </div>
+      {isMobile ? (
+        <div className={styles.dots}>
+          {imagens.map((_, i) => (
+            <span
+              key={i}
+              className={`${styles.dot} ${i === indexAtivo ? styles.activeDot : ''}`}
+              onClick={() => setIndexAtivo(i)}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className={styles.miniaturas}>
+          {imagens.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={`Miniatura ${i + 1}`}
+              onClick={() => setIndexAtivo(i)}
+              className={`${styles.miniatura} ${i === indexAtivo ? styles.ativo : ''}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

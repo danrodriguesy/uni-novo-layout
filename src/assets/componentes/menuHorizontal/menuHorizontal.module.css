@@ -25,3 +25,9 @@
 .containerLista > li > strong { 
     cursor: default;
 }
+
+@media (max-width: 599px){
+    .container {
+        display: none;
+    }
+}

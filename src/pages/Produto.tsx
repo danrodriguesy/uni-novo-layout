@@ -11,8 +11,51 @@ import styles from '../assets/componentes/produto/produto.module.css';
 import InformacaoDoProduto from '../assets/componentes/produto/infoProduto/infoProduto';
 import CarrosselFull from '../assets/componentes/carrosselFull/carrosselFull';
 import DescricaoDetalhada from '../assets/componentes/produto/descricaoDetalhada/descricaoDetalhada';
+import useIsMobile from '../assets/hooks/useIsMobile';
+import Accordion  from '../assets/componentes/produto/accordion/accordion';
+
+type AccordionItem = {
+  title: string;
+  content: string;
+};
 
 function Produto(){
+  const isMobile = useIsMobile();
+
+  const items: AccordionItem[] = [
+    { title: 'Descrição', content: 'Texto da descrição do produto.' },
+    { title: 'Informações técnicas do produto', content: 'Material: Vidro, Peso: 500g' },
+    { title: 'Limpeza e cuidados', content: 'Use pano seco e evite produtos abrasivos.' },
+    { title: 'Linha', content: 'Linha Elegance' },
+  ];
+
+  if(isMobile){
+    return (
+      <>
+        <TopBar />
+        <Header />
+        <MenuHorizontal />
+        <Breadcrumb />
+        <div className={styles.containerInformacoesProduto}>
+          <Slider />
+          <InformacaoDoProduto />
+        </div>
+        <Accordion items={items} />
+        <div className={styles.titleCompreJunto}>
+          <img
+            src="/imagens/produto/iconeCompreJunto.png"
+            className={styles.icone}
+            alt="Ícone Compre Junto"
+          />
+          <h2>Compre Junto</h2>
+        </div> 
+        <CarrosselFull />
+        <Newsletter />
+        <Footer />
+      </>
+    )
+  }
+  
   return (
     <>
       <TopBar />

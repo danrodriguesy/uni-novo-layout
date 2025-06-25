@@ -17,3 +17,14 @@
 .icone {
     width: 50px;
 }
+
+@media (max-width: 599px){
+    .containerInformacoesProduto { 
+        flex-direction: column;
+        width: 100%;
+    }
+    .titleCompreJunto {
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+}

@@ -1,7 +1,8 @@
 import styles from './descricaoDetalhada.module.css';
 import { FaStar } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 
-function DescricaoDetalhada() { 
+function DescricaoDetalhada() {
     return(
         <>
             <div className={styles.containerDescricaoDetalhada}>
@@ -21,58 +22,58 @@ function DescricaoDetalhada() {
                     </div>
                     <div className={styles.card}>
                         <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
+                            <img src="/imagens/produto/icone-box.png" alt="Ícone" />
                             <h3 className={styles.titleCard}>Especificações do Produto</h3>
                         </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
+                        <span className={styles.spanCard}><FaPlus fontSize={12} /></span>
                     </div>
                 </div>
                 <div className={styles.containerCards}>
                     <div className={styles.card}>
                         <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Cor</h3>
+                            <img src="/imagens/produto/icone-material.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Material</h3>
                         </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
+                        <span className={styles.spanCard}>Ferro</span>
                     </div>
                     <div className={styles.card}>
                         <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Especificações do Produto</h3>
+                            <img src="/imagens/produto/icone-box.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Especificações da Embalagem</h3>
                         </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
-                    </div>
-                </div>
-                <div className={styles.containerCards}>
-                    <div className={styles.card}>
-                        <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Cor</h3>
-                        </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
-                    </div>
-                    <div className={styles.card}>
-                        <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Especificações do Produto</h3>
-                        </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
+                        <span className={styles.spanCard}><FaPlus fontSize={12} /></span>
                     </div>
                 </div>
                 <div className={styles.containerCards}>
                     <div className={styles.card}>
                         <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Cor</h3>
+                            <img src="/imagens/produto/icone-garantia.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Garantia</h3>
                         </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
+                        <span className={styles.spanCard}>3 meses</span>
                     </div>
                     <div className={styles.card}>
                         <div className={styles.headerCard}>
-                            <img src="/imagens/produto/icone-cor.png" alt="Ícone" />
-                            <h3 className={styles.titleCard}>Especificações do Produto</h3>
+                            <img src="/imagens/produto/icone-caixa-inner.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Especificações da Caixa Inner</h3>
                         </div>
-                        <span className={styles.spanCard}>Inox/Preto</span>
+                        <span className={styles.spanCard}><FaPlus fontSize={12} /></span>
+                    </div>
+                </div>
+                <div className={styles.containerCards}>
+                    <div className={styles.card}>
+                        <div className={styles.headerCard}>
+                            <img src="/imagens/produto/icone-marca.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Marca</h3>
+                        </div>
+                        <span className={styles.spanCard}>Amortex</span>
+                    </div>
+                    <div className={styles.card}>
+                        <div className={styles.headerCard}>
+                            <img src="/imagens/produto/icone-caixa-master.png" alt="Ícone" />
+                            <h3 className={styles.titleCard}>Especificações da Caixa Master</h3>
+                        </div>
+                        <span className={styles.spanCard}><FaPlus fontSize={12} /></span>
                     </div>
                 </div>
                 <hr className={styles.hr} />
