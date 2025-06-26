@@ -12,7 +12,7 @@
 @media (max-width: 767px){
     .container > img {
         width: 31px;
-        margin-top: 0.6rem;
+        margin-top: 0.3rem;
         margin-bottom: 0.6rem;
     }
 }

@@ -3,22 +3,35 @@
     flex-direction: row;
     justify-content: center;
     margin: auto;
+    gap: 4rem;
+    margin-top: 2rem;
 }
 
-.containerImagens > img {
-    width: 270px;
+.containerImagens > figure > img {
+    width: 210px;
     height: auto;
     cursor: pointer;
 }
 
-@media (max-width: 600) {
+@media (max-width: 599px) {
+    .containerImagens { 
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .item {
         width: 100%; /* ocupa 100% da largura do carrossel */
         height: auto;
         object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-weight: 500;
     }
-    .containerImagens > img { 
+    .containerImagens > figure > img { 
         width: 200px;
+        margin: auto;
     }
 
 }

@@ -1,6 +1,9 @@
-import './App.css'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import './App.css';
+
 import TopBar from './assets/componentes/topBar/topBar';
 import Header from './assets/componentes/header/header';
+import MenuHorizontal from './assets/componentes/menuHorizontal/menuHorizontal';
 import SliderBannerPrincipal from './assets/componentes/SliderBannerPrincipal/slider';
 import FiltroInteligente from './assets/componentes/filtroInteligente/filtroInteligente';
 import Lancamentos from './assets/componentes/Lancamentos/lancamentos';
@@ -17,52 +20,103 @@ import Footer from './assets/componentes/footer/footer';
 import useIsMobile from './assets/hooks/useIsMobile';
 
 function App() {
-  
   const isMobile = useIsMobile();
+  const [showShadow, setShowShadow] = useState(false);
+  const [hideTopbar, setHideTopbar] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(0);
+  const headerRef = useRef<HTMLDivElement>(null);
 
-  if(isMobile){
-    return (
-      <>
-        <TopBar />
-        <Header />
-        <SliderBannerPrincipal />
-        <NossasMarcas />
-        <CarrosselNossasMarcas />
-        <Lancamentos />
-        <BannerHorizontal />
-        <FiltroInteligente />
-        <ComprePorCategorias />
-        <VitrineImagens />
-        <Newsletter />
-        <Footer />
-      </>
-    )
-  }
+  // mede o Header (sem TopBar) para compensar
+  useLayoutEffect(() => {
+    const updateHeight = () => {
+      if (headerRef.current) {
+        const height = headerRef.current.offsetHeight;
+        setHeaderHeight(height);
+      }
+    };
+
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
+  }, [hideTopbar]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      setShowShadow((prev) => {
+        const next = scrollY > 10;
+        return prev !== next ? next : prev;
+      });
+
+      setHideTopbar((prev) => {
+        const next = scrollY > 0;
+        return prev !== next ? next : prev;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <TopBar />
-      <Header />
-      <SliderBannerPrincipal />
-      <FiltroInteligente />
-      <Lancamentos />
-      <BannerHorizontal />
-      <ComprePorCategorias />
-      <NossasMarcas />
-      <CarrosselNossasMarcas />
-      <MaisVendidos
-        titulo="Mais Vendidos"
-        imagem="/imagens/maisVendidos/mais-vendidos.png"
-        textoBotao="Ver Mais"
-      />
-      <BannerHorizontal />
-      <UniversalRecomenda />
-      <CarrosselFull />
-      <VitrineImagens />
-      <Newsletter />
-      <Footer />
+      {/* TopBar dentro de wrapper com altura fixa */}
+      <div style={{ height: 40, overflow: 'hidden' }}>
+        <TopBar hidden={hideTopbar} />
+      </div>
+
+      {/* Header fixo que será medido */}
+      <div
+        ref={headerRef}
+        className={`containerHeader ${showShadow ? 'with-shadow' : ''}`}
+      >
+        <Header />
+        <MenuHorizontal />
+      </div>
+
+      {/* Espaçador que evita pulo do conteúdo */}
+      {showShadow && <div style={{ height: headerHeight }} />}
+
+      <main>
+        {isMobile ? (
+          <>
+            <SliderBannerPrincipal />
+            <NossasMarcas />
+            <CarrosselNossasMarcas />
+            <Lancamentos />
+            <BannerHorizontal />
+            <FiltroInteligente />
+            <ComprePorCategorias />
+            <VitrineImagens />
+            <Newsletter />
+            <Footer />
+          </>
+        ) : (
+          <>
+            <SliderBannerPrincipal />
+            <FiltroInteligente />
+            <Lancamentos />
+            <BannerHorizontal />
+            <ComprePorCategorias />
+            <NossasMarcas />
+            <CarrosselNossasMarcas />
+            <MaisVendidos
+              titulo="Mais Vendidos"
+              imagem="/imagens/maisVendidos/mais-vendidos.png"
+              textoBotao="Ver Mais"
+            />
+            <BannerHorizontal />
+            <UniversalRecomenda />
+            <CarrosselFull />
+            <VitrineImagens />
+            <Newsletter />
+            <Footer />
+          </>
+        )}
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

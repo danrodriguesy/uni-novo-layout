@@ -1,5 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
-    font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --topbar-height: 40px;
+}
+
+.containerHeader {
+  background-color: white;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  width: 100%;
+}
+
+.with-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }

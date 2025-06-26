@@ -3,18 +3,20 @@ import ListaLinks from './listaLinks/listaLinks';
 import Slider from './slider/slider';
 import BandeirasIdiomas from './bandeiras/bandeirasIdiomas';
 
-function topBar() {
-    return (
-        <>
-            <div className={styles.container}>
-                <div className={styles.content}>
-                    <ListaLinks />
-                    <Slider />
-                    <BandeirasIdiomas />
-                </div>
-            </div>
-        </>
-    )
+type TopBarProps = {
+  hidden: boolean;
+};
+
+function TopBar({ hidden }: TopBarProps) {
+  return (
+    <div className={`${styles.inner} ${hidden ? styles.hidden : ''}`}>
+      <div className={styles.content}>
+        <ListaLinks />
+        <Slider />
+        <BandeirasIdiomas />
+      </div>
+    </div>
+  );
 }
 
-export default topBar;
+export default TopBar;
