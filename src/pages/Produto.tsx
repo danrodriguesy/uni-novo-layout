@@ -32,7 +32,7 @@ function Produto(){
   if(isMobile){
     return (
       <>
-        <TopBar />
+        <TopBar hidden={false} />
         <Header />
         <MenuHorizontal />
         <Breadcrumb />
@@ -58,7 +58,7 @@ function Produto(){
   
   return (
     <>
-      <TopBar />
+      <TopBar hidden={false} />
       <Header />
       <MenuHorizontal />
       <Breadcrumb />

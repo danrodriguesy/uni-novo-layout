@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
 import TopBar from './assets/componentes/topBar/topBar';
@@ -23,22 +23,7 @@ function App() {
   const isMobile = useIsMobile();
   const [showShadow, setShowShadow] = useState(false);
   const [hideTopbar, setHideTopbar] = useState(false);
-  const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
-
-  // mede o Header (sem TopBar) para compensar
-  useLayoutEffect(() => {
-    const updateHeight = () => {
-      if (headerRef.current) {
-        const height = headerRef.current.offsetHeight;
-        setHeaderHeight(height);
-      }
-    };
-
-    updateHeight();
-    window.addEventListener('resize', updateHeight);
-    return () => window.removeEventListener('resize', updateHeight);
-  }, [hideTopbar]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,9 +59,6 @@ function App() {
         <Header />
         <MenuHorizontal />
       </div>
-
-      {/* Espaçador que evita pulo do conteúdo */}
-      {showShadow && <div style={{ height: headerHeight }} />}
 
       <main>
         {isMobile ? (

@@ -7,7 +7,7 @@
 .links > li {
     color: #FFF;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 13px;
 }
 .noClick {
     cursor: default;
