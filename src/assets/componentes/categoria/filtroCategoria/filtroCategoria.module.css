@@ -1,0 +1,50 @@
+.iconFiltroCategoria {
+    width: auto;
+    height: 16px;
+    margin-right: 10px;
+}
+.contentFiltroCategoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 1150px;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #e9e6e6;
+    border-top: 1px solid #e9e6e6;
+}
+.btnFiltroCategoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #55565A;
+    border: 1px solid #55565A;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.selectFiltroCategoria {
+    border: 1px solid #ADADAD;
+    border-radius: 10px;
+    padding: 10px;
+}
+.iconsGridFiltroCategoria {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.iconGrid3xFiltroCategoria > img {
+    width: auto;
+    height: 25px;
+    cursor: pointer;
+}
+.iconGrid5xFiltroCategoria > img {
+    width: auto;
+    height: 25px;
+    cursor: pointer;
+}

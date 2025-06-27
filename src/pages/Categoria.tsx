@@ -7,6 +7,10 @@ import '../../src/index.css';
 import MenuHorizontal from '../assets/componentes/menuHorizontal/menuHorizontal';
 import Breadcrumb from '../assets/componentes/breadcrumb/breadcrumb';
 import useIsMobile from '../assets/hooks/useIsMobile';
+import BannerEstatico from '../assets/componentes/bannerEstatico/bannerEstatico';
+import FiltroSimples from '../assets/componentes/filtroSimples/filtroSimples';
+import styles from '../assets/componentes/categoria/categoria.module.css';
+import FiltroCategoria from '../assets/componentes/categoria/filtroCategoria/filtroCategoria';
 
 function Categoria(){
   const isMobile = useIsMobile();
@@ -17,7 +21,6 @@ function Categoria(){
         <TopBar hidden={false} />
         <Header />
         <MenuHorizontal />
-        <Breadcrumb />
         
         <Newsletter />
         <Footer />
@@ -30,10 +33,20 @@ function Categoria(){
       <TopBar hidden={false} />
       <Header />
       <MenuHorizontal />
+      
+      <BannerEstatico />
+      
+      <FiltroSimples />
       <Breadcrumb />
-      
-      
-      <Newsletter />
+      <FiltroCategoria />
+      <div className={styles.containerTitle}>
+        <img
+          className={styles.icon}
+          src="/imagens/lancamentos/lancamento.png"
+          alt="Lançamentos"
+        />
+        <h2 className={styles.title}>Lançamentos</h2>
+      </div>
       <Footer />
     </>
   )

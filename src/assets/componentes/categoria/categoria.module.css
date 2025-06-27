@@ -1,0 +1,20 @@
+.containerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 2rem 0rem;
+    margin-top: 10px;
+    margin: auto;
+    width: 1290px;
+  }
+  
+  .title {
+    color: #333333;
+    font-size: 25px;
+  }
+  .icon {
+    width: 38px;
+    height: auto;
+  }
