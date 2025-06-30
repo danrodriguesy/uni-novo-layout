@@ -6,7 +6,7 @@
   position: relative;
 }
 
-/* Desktop layout */
+/* Desktop (e mobile por padrão) */
 .carrossel {
   display: flex;
   gap: 1rem;
@@ -14,18 +14,21 @@
   padding: 0.5rem;
 }
 
-/* Mobile layout */
-.mobileCarrossel {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding: 0.5rem;
-  scrollbar-width: none;
-}
-.mobileCarrossel::-webkit-scrollbar {
-  display: none;
+/* Tablet apenas (600px a 1024px) */
+@media (max-width: 599px) {
+  .tabletCarrossel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .tabletCarrossel::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .logoBox {
@@ -40,6 +43,7 @@
   transition: transform 0.3s ease;
   scroll-snap-align: start;
 }
+
 .logoBox:hover {
   transform: scale(1.05);
 }
@@ -57,6 +61,7 @@
   gap: 8px;
   margin-top: 1rem;
 }
+
 .dot {
   width: 10px;
   height: 10px;
@@ -66,9 +71,28 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .dot:hover {
   background-color: #888;
 }
+
 .active {
   background-color: #000;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .tabletCarrossel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    
+  }
 }

@@ -71,7 +71,7 @@
   border-color: #333;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .seta {
     display: none;
   }

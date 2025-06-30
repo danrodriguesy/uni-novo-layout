@@ -170,3 +170,24 @@
     margin-left: 1rem;
   }
 }
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .wrapper {
+    width: 98%;
+  }
+  .sliderArea {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    width: 100%;;
+  }
+  .card {
+    width: 200px;
+  }
+  .seta {
+    display: none;
+  }
+}

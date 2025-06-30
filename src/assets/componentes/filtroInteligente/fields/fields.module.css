@@ -37,7 +37,7 @@
   z-index: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .container {
     flex-direction: column;
     width: 100%;
@@ -45,5 +45,22 @@
   .select {
     border-radius: 10px;
     color: #000;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .select {
+    width: 100%;
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .selectWrapper {
+    width: 100%;
   }
 }

@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .containerImagens { 
         margin-left: 1rem;
         margin-right: 1rem;

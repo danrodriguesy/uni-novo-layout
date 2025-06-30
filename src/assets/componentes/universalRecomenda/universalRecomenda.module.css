@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
   max-width: 1048px;
   margin: 3rem auto 0 auto;
   padding: 0 1rem;
@@ -52,4 +51,34 @@
   border-radius: .5rem;
   background-color: #FFF;
   cursor: pointer;
+}
+
+@media (max-width: 599px) {
+  /* Estilos para tablets */
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .center {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    width: 100%;
+    flex-direction: row;
+  }
+  .title {
+    font-size: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .icone {
+    width: 28px;
+  }
+  .btn {
+    margin-right: 2rem;
+  }
 }

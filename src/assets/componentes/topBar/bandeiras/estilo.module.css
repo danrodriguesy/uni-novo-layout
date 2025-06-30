@@ -16,3 +16,11 @@
         margin-bottom: 0.6rem;
     }
 }
+
+@media (max-width: 767px) {
+    .container > img {
+      width: auto !important;
+      height: 26px;
+    }
+}
+

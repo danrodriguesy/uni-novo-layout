@@ -51,3 +51,11 @@
     border-radius: 5px;
     color: #707070;
 }
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    max-width: 100%;
+  }
+}

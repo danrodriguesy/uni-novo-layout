@@ -9,3 +9,16 @@
     }
 }
 
+@media (max-width: 767px) {
+    /* Estilos para tablets */
+    .logo {
+        width: 150px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+   .logo {
+    width: 150px;
+   } 
+  }

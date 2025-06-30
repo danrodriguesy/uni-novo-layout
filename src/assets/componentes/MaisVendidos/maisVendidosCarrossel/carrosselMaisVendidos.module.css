@@ -210,3 +210,29 @@
 .active {
   background-color: #454545;
 }
+
+
+@media (max-width: 599px) {
+  /* Estilos para tablets */
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    width: 100%;
+    justify-content: end;
+  }
+  .sliderArea {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+  }
+  .containerBanner {
+    margin-right: 1rem;
+  }
+}

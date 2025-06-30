@@ -36,7 +36,7 @@
   transform: scale(1.1); /* aumenta 10% ao passar o mouse */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 599px) {
   .container {
     width: 100%;
   }
@@ -92,5 +92,16 @@
 
   .active {
     background-color: #000;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    width: 98%;
+  }
+  .img1, .img2, .img3 {
+    width: 300px;
   }
 }

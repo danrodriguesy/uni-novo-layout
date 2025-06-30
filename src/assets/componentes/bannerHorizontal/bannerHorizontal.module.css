@@ -10,7 +10,7 @@
     width: 1060px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .containerBanner {
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -21,3 +21,10 @@
         border-radius: 0;
    } 
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+    .banner {
+        width: 98%;
+    }
+  }

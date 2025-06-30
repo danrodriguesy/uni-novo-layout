@@ -1,7 +1,23 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import useIsMobile from '../../../hooks/useIsMobile';
 import styles from './carrosselMarcas.module.css';
+
+// 👉 Ajuste para considerar tablets como touch
+function useIsTabletTouch() {
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const update = () => {
+      const width = window.innerWidth;
+      setIsTablet(width >= 600 && width <= 1024);
+    };
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
+
+  return isTablet;
+}
 
 const marcas = [
   { id: 1, src: '/imagens/nossasMarcas/amortex.png', alt: 'Amortex' },
@@ -19,22 +35,21 @@ const GAP = 16;
 const VISIBLE_DESKTOP = 4;
 
 function CarrosselMarcas() {
-  const isMobile = useIsMobile();
+  const isTabletTouch = useIsTabletTouch();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
 
-  // Atualiza largura do container no mobile
   useEffect(() => {
-    if (isMobile && scrollRef.current) {
+    if (isTabletTouch && scrollRef.current) {
       const updateWidth = () => setContainerWidth(scrollRef.current!.offsetWidth);
       updateWidth();
       window.addEventListener('resize', updateWidth);
       return () => window.removeEventListener('resize', updateWidth);
     }
-  }, [isMobile]);
+  }, [isTabletTouch]);
 
-  const cardsPerStep = isMobile
+  const cardsPerStep = isTabletTouch
     ? Math.floor(containerWidth / (CARD_WIDTH + GAP)) || 1
     : VISIBLE_DESKTOP;
 
@@ -44,8 +59,7 @@ function CarrosselMarcas() {
 
   const handleDotClick = (i: number) => {
     setIndex(i);
-
-    if (isMobile && scrollRef.current) {
+    if (isTabletTouch && scrollRef.current) {
       scrollRef.current.scrollTo({
         left: i * stepWidth,
         behavior: 'smooth',
@@ -53,9 +67,8 @@ function CarrosselMarcas() {
     }
   };
 
-  // Sincroniza os dots com o scroll no mobile
   useEffect(() => {
-    if (!isMobile || !scrollRef.current) return;
+    if (!isTabletTouch || !scrollRef.current) return;
 
     const handleScroll = () => {
       const scrollX = scrollRef.current!.scrollLeft;
@@ -66,12 +79,12 @@ function CarrosselMarcas() {
     const el = scrollRef.current;
     el.addEventListener('scroll', handleScroll);
     return () => el.removeEventListener('scroll', handleScroll);
-  }, [isMobile, stepWidth]);
+  }, [isTabletTouch, stepWidth]);
 
   return (
     <div className={styles.wrapper}>
-      {isMobile ? (
-        <div className={styles.mobileCarrossel} ref={scrollRef}>
+      {isTabletTouch ? (
+        <div className={styles.tabletCarrossel} ref={scrollRef}>
           {marcas.map((marca) => (
             <div className={styles.logoBox} key={marca.id}>
               <img src={marca.src} alt={marca.alt} className={styles.logo} />

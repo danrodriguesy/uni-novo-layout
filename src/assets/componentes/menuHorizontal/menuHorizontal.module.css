@@ -31,3 +31,11 @@
         display: none;
     }
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .containerLista { 
+        gap: 1rem;
+        font-size: 11px;
+        width: 100%;
+    }
+}

@@ -247,7 +247,7 @@
   background-color: #454545;
 }
 
-@media (max-width: 600px){
+@media (max-width: 599px){
   .container {
     width: 100%;
     padding: 0;
@@ -309,3 +309,24 @@
   }  
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    justify-content: start;
+    overflow: hidden;
+  }
+  .sliderArea {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .sliderArea {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+}

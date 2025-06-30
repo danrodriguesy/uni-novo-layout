@@ -73,7 +73,7 @@
 }
 
 /* Responsivo */
-@media (max-width: 758px) {
+@media (max-width: 599px) {
   .container {
     margin-top: 2rem;
   }
@@ -105,5 +105,13 @@
   .input {
     padding: 0.6rem;
     width: 90%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .contentnewsletter {
+    width: 90%;
+    box-sizing: border-box;
   }
 }
