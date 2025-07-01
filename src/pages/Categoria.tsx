@@ -11,6 +11,7 @@ import BannerEstatico from '../assets/componentes/bannerEstatico/bannerEstatico'
 import FiltroSimples from '../assets/componentes/filtroSimples/filtroSimples';
 import styles from '../assets/componentes/categoria/categoria.module.css';
 import FiltroCategoria from '../assets/componentes/categoria/filtroCategoria/filtroCategoria';
+import VitrineProdutos from '../assets/componentes/produto/vitrineProdutos/vitrineProdutos';
 
 function Categoria(){
   const isMobile = useIsMobile();
@@ -47,6 +48,7 @@ function Categoria(){
         />
         <h2 className={styles.title}>Lançamentos</h2>
       </div>
+      <VitrineProdutos />
       <Footer />
     </>
   )

@@ -19,13 +19,13 @@
 }
 
 .card {
-      flex: 0 0 auto;
-    width: 219px;
-    padding: 1rem;
-    margin-right: 1rem;
-    border-radius: 1rem;
-    border: 1px solid #ADADAD;
-    background-color: white;
+  flex: 0 0 auto;
+  width: 219px;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #adadad;
+  background-color: white;
 }
 
 .seta {
@@ -35,7 +35,7 @@
   font-size: 2.5rem;
   background: none;
   border: none;
-  color: #AE1F21;
+  color: #ae1f21;
   cursor: pointer;
   z-index: 10;
   width: 44px !important;
@@ -46,7 +46,8 @@
 .right {
   right: -21px;
 }
-.arrowLeft, .arrowRight {
+.arrowLeft,
+.arrowRight {
   width: 44px;
 }
 .dots {
@@ -58,7 +59,7 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   border: 1px solid #000;
   cursor: pointer;
@@ -82,7 +83,7 @@
   align-items: center;
 }
 .tag {
-  background-color: #AE1F21;
+  background-color: #ae1f21;
   padding: 10px;
   border-radius: 1rem;
   color: white;
@@ -121,11 +122,11 @@
   margin-bottom: 2rem;
 }
 .starAmarela {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 22px;
 }
 .starCinza {
-  color: #E0E0E0;
+  color: #e0e0e0;
   font-size: 22px;
 }
 .btn {
@@ -138,7 +139,7 @@
   padding: 0.8rem;
   font-size: 16px;
   color: white;
-  background-color: #AE1F21;
+  background-color: #ae1f21;
   border: none;
   border-radius: 0.75rem;
   cursor: pointer;
@@ -154,23 +155,22 @@
   .wrapper {
     width: 100%;
     margin-top: 2rem;
-  } 
+  }
   .seta {
     display: none;
   }
-  .sliderArea { 
+  .sliderArea {
     overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        padding-bottom: 1rem;
-        width: 100%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+    width: 100%;
   }
-  .card { 
+  .card {
     margin-left: 1rem;
   }
 }
-
 
 @media (min-width: 600px) and (max-width: 1024px) {
   /* Estilos para tablets */
@@ -182,7 +182,7 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    width: 100%;;
+    width: 100%;
   }
   .card {
     width: 200px;
