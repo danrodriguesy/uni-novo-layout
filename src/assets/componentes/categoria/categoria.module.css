@@ -18,3 +18,9 @@
     width: 38px;
     height: auto;
   }
+
+  @media (max-width: 599px) {
+    .containerTitle { 
+      width: auto;
+    }
+  }

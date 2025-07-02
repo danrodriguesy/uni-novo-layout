@@ -22,7 +22,17 @@ function Categoria(){
         <TopBar hidden={false} />
         <Header />
         <MenuHorizontal />
-        
+        <BannerEstatico />
+        <FiltroCategoria />  
+        <div className={styles.containerTitle}>
+          <img
+            className={styles.icon}
+            src="/imagens/lancamentos/lancamento.png"
+            alt="Lançamentos"
+          />
+          <h2 className={styles.title}>Lançamentos</h2>
+        </div>
+        <VitrineProdutos />
         <Newsletter />
         <Footer />
       </>
@@ -49,7 +59,9 @@ function Categoria(){
         <h2 className={styles.title}>Lançamentos</h2>
       </div>
       <VitrineProdutos />
+      <Newsletter />
       <Footer />
+      
     </>
   )
 }

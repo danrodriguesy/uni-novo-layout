@@ -20,11 +20,11 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #55565A;
-    border: 1px solid #55565A;
     border-radius: 5px;
     padding: 10px;
     color: #fff;
+    background: none;
+    border: 0;
     cursor: pointer;
 }
 .selectFiltroCategoria {
@@ -49,3 +49,10 @@
     cursor: pointer;
 }
 
+@media (max-width: 599px) {
+    .contentFiltroCategoria { 
+        width: auto;
+        justify-content: center;
+        
+    }
+}
