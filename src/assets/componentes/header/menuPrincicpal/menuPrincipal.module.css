@@ -1,0 +1,108 @@
+.megaMenuContainer {
+  position: absolute;
+  top: 3.9vw;
+  left: 0;
+  height: 90vh;
+  width: 60vw;
+  z-index: 9999;
+  display: flex;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menuLeft {
+  width: 260px;
+  background: #f9f9f9;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  left: 0;
+  overflow-x: auto;
+}
+
+.menuLeftItem {
+  display: flex;
+  padding: 12px 13px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+  flex-direction: column;
+}
+
+.menuLeftItem:hover,
+.active {
+  background-color: #e6e6e6;
+}
+
+.logoWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.logo {
+  width: auto;
+  height: 25px;
+}
+
+.infoWrap {
+  flex: 1;
+}
+
+.desc {
+  font-size: 13.5px;
+  font-weight: 300;
+  color: #333;
+}
+
+.arrow {
+  font-size: 16px;
+  color: #aaa;
+  margin-left: auto;
+
+}
+
+.menuRight {
+  flex: 1;
+  padding: 20px 30px;
+  background: #fff;
+}
+
+.menuRightTitle {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  color: #222;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 20px;
+}
+
+.menuSubitem {
+  font-size: 14px;
+  color: #444;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.menuSubitem:hover {
+  text-decoration: underline;
+}
+
+.verTodos {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0066cc;
+  cursor: pointer;
+}

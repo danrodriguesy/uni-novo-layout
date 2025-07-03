@@ -53,6 +53,6 @@
     .contentFiltroCategoria { 
         width: auto;
         justify-content: center;
-        
+        border: 0;
     }
 }
