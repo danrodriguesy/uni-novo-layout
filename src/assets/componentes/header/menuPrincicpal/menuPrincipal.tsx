@@ -57,8 +57,14 @@ function MenuPrincipal() {
     return (
       <div className={styles.mobileMenuContainer}>
         <div className={styles.mobileMenuHeader}>
-          <GoPerson fontWeight={800} size={25} />
-          <span>Entre ou Cadastre-se</span>
+          <div>
+            <GoPerson fontWeight={800} size={18} />
+            <span>Entre ou Cadastre-se</span>
+          </div>
+          <div>
+            
+          </div>
+          
         </div>
 
         {categorias.map((cat, index) => (
