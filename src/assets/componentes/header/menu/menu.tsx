@@ -20,14 +20,18 @@ function Menu() {
       document.querySelector(".content")?.classList.add("menuAberto");
     } else {
       document.querySelector("main")?.classList.remove("menuAberto");
-      document.querySelector(".containerHeader")?.classList.remove("menuAberto");
+      document
+        .querySelector(".containerHeader")
+        ?.classList.remove("menuAberto");
       document.querySelector(".inner")?.classList.remove("menuAberto");
       document.querySelector(".content")?.classList.remove("menuAberto");
     }
 
     return () => {
       document.querySelector("main")?.classList.remove("menuAberto");
-      document.querySelector(".containerHeader")?.classList.remove("menuAberto");
+      document
+        .querySelector(".containerHeader")
+        ?.classList.remove("menuAberto");
       document.querySelector(".inner")?.classList.remove("menuAberto");
       document.querySelector(".content")?.classList.remove("menuAberto");
     };
@@ -90,6 +94,23 @@ function Menu() {
                   overflowY: "auto",
                 }}
               >
+                <button
+                  onClick={() => setAberto(false)}
+                  style={{
+                    position: "absolute",
+                    top: 16,
+                    right: 16,
+                    zIndex: 10,
+                    background: "none",
+                    color: "#000",
+                    border: "none",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                  }}
+                  aria-label="Fechar menu"
+                >
+                  <FaTimes />
+                </button>
                 <MenuPrincipal />
               </motion.div>
             </motion.div>

@@ -52,19 +52,13 @@ const categorias = [
 function MenuPrincipal() {
   const isMobile = useIsMobile();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  
+
   if (isMobile) {
     return (
       <div className={styles.mobileMenuContainer}>
         <div className={styles.mobileMenuHeader}>
-          <div>
-            <GoPerson fontWeight={800} size={18} />
-            <span>Entre ou Cadastre-se</span>
-          </div>
-          <div>
-            
-          </div>
-          
+          <GoPerson fontWeight={800} size={30} />
+          <span>Entre ou Cadastre-se</span>
         </div>
 
         {categorias.map((cat, index) => (
@@ -84,14 +78,13 @@ function MenuPrincipal() {
                 color="#ADADAD"
                 size={20}
                 style={{
-                  transform: activeIndex === index ? "rotate(90deg)" : "rotate(0)",
+                  transform:
+                  activeIndex === index ? "rotate(90deg)" : "rotate(0)",
                   transition: "transform 0.2s ease",
                 }}
               />
             </div>
-            <span className={styles.tituloItemMenuMobile}>
-              {cat.descricao}
-            </span>
+            <span className={styles.tituloItemMenuMobile}>{cat.descricao}</span>
 
             {activeIndex === index && (
               <div className={styles.mobileSubmenu}>
