@@ -9,7 +9,7 @@
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .menuLeft {
@@ -64,7 +64,6 @@
   font-size: 16px;
   color: #aaa;
   margin-left: auto;
-
 }
 
 .menuRight {
@@ -105,4 +104,45 @@
   font-size: 14px;
   color: #0066cc;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .mobileMenuContainer {
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;         /* ← permite rolar o conteúdo */
+    -webkit-overflow-scrolling: touch; /* suaviza o scroll no iOS */
+    box-sizing: border-box;
+  }
+  .mobileMenuHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  .logoMobileIteMenu {
+    width: auto;
+    height: 30px;
+  }
+  .ItemMenuMobile {
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+  }
+  .headerItemMenuMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tituloItemMenuMobile {
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
 }

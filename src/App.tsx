@@ -20,6 +20,7 @@ import Footer from './assets/componentes/footer/footer';
 import useIsMobile from './assets/hooks/useIsMobile';
 
 function App() {
+
   const isMobile = useIsMobile();
   const [showShadow, setShowShadow] = useState(false);
   const [hideTopbar, setHideTopbar] = useState(false);
