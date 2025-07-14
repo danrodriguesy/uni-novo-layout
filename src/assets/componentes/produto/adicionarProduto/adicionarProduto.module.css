@@ -1,0 +1,30 @@
+.containerAdicionarProduto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.adicionarBtn {
+    width: 70%;
+    background-color: #59BC4C;
+    color: #FFF;
+    display: flex;
+    padding: 0.6rem 0;
+    justify-content: center;
+    gap: 0.5rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.add {
+    display: flex;
+    border: 1px solid #ADADAD;
+    width: 30%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 700;
+    color: #707070;
+    font-size: 1.1rem;
+}
