@@ -115,7 +115,7 @@
   .bannerSlide {
     flex: 0 0 100%;
     scroll-snap-align: start;
-    height: 300px;
+   
   }
   .dots {
     display: flex;

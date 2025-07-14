@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./carrosselFull.module.css";
 import { CiHeart } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
 
 const produtos = [
   {
@@ -84,13 +83,6 @@ function CarrosselProdutos() {
               </div>
               <div className={styles.containerTituloProduto}>
                 <p className={styles.tituloProduto}>{produto.nome}</p>
-              </div>
-              <div className={styles.containerStars}>
-                <FaStar className={styles.starAmarela} />
-                <FaStar className={styles.starAmarela} />
-                <FaStar className={styles.starAmarela} />
-                <FaStar className={styles.starAmarela} />
-                <FaStar className={styles.starCinza} />
               </div>
               <div className={styles.btn}>
                 <button className={styles.btnCadastro}>

@@ -88,12 +88,18 @@
         width: 90%;
    }
    .containerBtn > button {
-        width: 100%;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    justify-content: center;
+    text-align: center;
    }
     .btnBuscar > svg {
         width: 20px;
+   }
+   .headerBuscarPorPlaca > h1 {
+    font-size: 1rem;
    }
 }

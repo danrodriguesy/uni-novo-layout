@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './carrosselMaisVendidos.module.css';
 import { CiHeart } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
 
 const produtos = [
   { id: 1, ref: '99743', nome: 'Amortecedor Mola a Gás da tampa do porta-mal....' },
@@ -63,13 +62,6 @@ function CarrosselMaisVendidos() {
                   </div>
                   <div className={styles.containerTituloProduto}>
                     <p className={styles.tituloProduto}>{produto.nome}</p>
-                  </div>
-                  <div className={styles.containerStars}>
-                    <FaStar className={styles.starAmarela} />
-                    <FaStar className={styles.starAmarela} />
-                    <FaStar className={styles.starAmarela} />
-                    <FaStar className={styles.starAmarela} />
-                    <FaStar className={styles.starCinza} />
                   </div>
                   <div className={styles.btn}>
                     <button className={styles.btnCadastro}>

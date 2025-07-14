@@ -1,5 +1,4 @@
 import styles from "./maisVendidos.module.css";
-import CarrosselMaisVendidos from "./maisVendidosCarrossel/carrosselMaisVendidos";
 
 interface MaisVendidosProps {
   titulo: string;
@@ -34,7 +33,7 @@ function MaisVendidos({
       </div>
 
       <br />
-      <CarrosselMaisVendidos />
+      { /* <CarrosselMaisVendidos  >*/}
     </>
   );
 }

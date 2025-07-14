@@ -19,6 +19,8 @@ import Newsletter from './assets/componentes/newsletter/newsletter';
 import Footer from './assets/componentes/footer/footer';
 import useIsMobile from './assets/hooks/useIsMobile';
 import BuscarPorPlaca from './assets/componentes/buscarProPlaca/buscarPorPlaca';
+import CarrosselMaisVendidos from './assets/componentes/MaisVendidos/maisVendidosCarrossel/carrosselMaisVendidos';
+
 
 function App() {
 
@@ -81,6 +83,12 @@ function App() {
             <SliderBannerPrincipal />
             <br /><br />
             <BuscarPorPlaca />
+            <br /><br />
+            <MaisVendidos
+              titulo="Lançamentos"
+              imagem="/imagens/lancamentos/lancamento.png"
+              textoBotao="Ver Mais"
+            />
             <Lancamentos />
             <BannerHorizontal />
             <ComprePorCategorias />
@@ -91,6 +99,7 @@ function App() {
               imagem="/imagens/maisVendidos/mais-vendidos.png"
               textoBotao="Ver Mais"
             />
+            <CarrosselMaisVendidos />
             <BannerHorizontal />
             <UniversalRecomenda />
             <CarrosselFull />

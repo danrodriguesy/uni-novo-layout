@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "./lancamentos.module.css";
 import { CiHeart } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
 
 const produtos = [
   { id: 1, ref: "99743", nome: "Amortecedor Mola a Gás da Tampa do Porta-Malas..." },
@@ -69,15 +68,6 @@ function Lancamentos() {
 
   return (
     <div className={styles.containerGlobal}>
-      <div className={styles.containerTitle}>
-        <img
-          className={styles.icon}
-          src="/imagens/lancamentos/lancamento.png"
-          alt="Lançamentos"
-        />
-        <h2 className={styles.title}>Lançamentos</h2>
-      </div>
-
       <div className={styles.container}>
         {!isMobile && (
           <div className={styles.containerBanner}>
@@ -185,13 +175,7 @@ function ProdutoCard({ produto }: { produto: { ref: string; nome: string } }) {
       <div className={styles.containerTituloProduto}>
         <p className={styles.tituloProduto}>{produto.nome}</p>
       </div>
-      <div className={styles.containerStars}>
-        <FaStar className={styles.starAmarela} />
-        <FaStar className={styles.starAmarela} />
-        <FaStar className={styles.starAmarela} />
-        <FaStar className={styles.starAmarela} />
-        <FaStar className={styles.starCinza} />
-      </div>
+      
       <div className={styles.btn}>
         <button className={styles.btnCadastro}>
           <span className={styles.textoBtn1}>Cadastre-se</span>

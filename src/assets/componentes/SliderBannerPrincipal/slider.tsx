@@ -4,15 +4,17 @@ import styles from './slider.module.css';
 import useIsMobile from '../../hooks/useIsMobile';
 
 const banners = [
-  { id: 1, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 1' },
-  { id: 2, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 2' },
-  { id: 3, img: '/imagens/sliderBannerPrincipal/banner.png', alt: 'Banner 3' },
+  { id: 1, img: '/imagens/sliderBannerPrincipal/entregaRapida.jpg', alt: 'Banner 1' },
+  { id: 2, img: '/imagens/sliderBannerPrincipal/CTF.jpg', alt: 'Banner 2' },
+  { id: 3, img: '/imagens/sliderBannerPrincipal/entregaRapida.jpg', alt: 'Banner 3' },
+  { id: 4, img: '/imagens/sliderBannerPrincipal/boletosFalsos.jpg', alt: 'Banner 4' },
 ];
 
 const bannersMobile = [
-  { id: 1, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 1' },
-  { id: 2, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 2' },
-  { id: 3, img: '/imagens/sliderBannerPrincipal/banner-mobile.png', alt: 'Banner 3' },
+  { id: 1, img: '/imagens/sliderBannerPrincipal/entregaRapidaMobile.jpg', alt: 'Banner 1' },
+  { id: 2, img: '/imagens/sliderBannerPrincipal/CTFMobile.jpg', alt: 'Banner 2' },
+  { id: 3, img: '/imagens/sliderBannerPrincipal/entregaRapida.jpg', alt: 'Banner 3' },
+  { id: 4, img: '/imagens/sliderBannerPrincipal/portalClienteMobile.jpg', alt: 'Banner 4' },
 ];
 
 function Banner() {

@@ -43,11 +43,6 @@ function InfoProduto() {
               </div>
               <span className={styles.categoria}>Amortex</span>
             </div>
-            <div className={styles.entreguePor}>
-              <span>
-                Vendido e entregue por: UNIVERSAL AUTOMOTIVE SYSTEMS S/A.
-              </span>
-            </div>
             <div className={styles.containerDuvida}>
               <div>
                 <img
@@ -97,7 +92,7 @@ function InfoProduto() {
             <span className={styles.mais}>+</span>{" "}
             <span className={styles.texto}>Ver descrição completa</span>
           </div>
-          <div className={styles.containerAvaliacaoCategoria}>
+          {/*<div className={styles.containerAvaliacaoCategoria}>
             <div className={styles.stars}>
               <CiStar fontSize={30} className={styles.star} />
               <CiStar fontSize={30} className={styles.star} />
@@ -106,12 +101,20 @@ function InfoProduto() {
               <CiStar fontSize={30} className={styles.star} />
             </div>
             <span className={styles.categoria}>Amortex</span>
+          </div>*/}
+          <div className={styles.precoEstoque}>
+            <div>
+              <span className={styles.precoAntigo}>R$ 599,99</span>
+              <span className={styles.precoDesconto}>R$ 499,99</span>
+            </div>
+            <div className={styles.containerPreco}>
+              <span className={styles.desconto}>-20%</span>
+            </div>
+            <div className={styles.containerEstoque}>
+              <span className={styles.estoqueRestante}>Restam 41 Un.</span>
+            </div>
           </div>
-          <div className={styles.entreguePor}>
-            <span>
-              Vendido e entregue por: UNIVERSAL AUTOMOTIVE SYSTEMS S/A.
-            </span>
-          </div>
+
         </div>
         <div className={styles.containerDuvida}>
           <div>
