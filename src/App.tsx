@@ -5,7 +5,7 @@ import TopBar from './assets/componentes/topBar/topBar';
 import Header from './assets/componentes/header/header';
 import MenuHorizontal from './assets/componentes/menuHorizontal/menuHorizontal';
 import SliderBannerPrincipal from './assets/componentes/SliderBannerPrincipal/slider';
-import FiltroInteligente from './assets/componentes/filtroInteligente/filtroInteligente';
+//import FiltroInteligente from './assets/componentes/filtroInteligente/filtroInteligente';
 import Lancamentos from './assets/componentes/Lancamentos/lancamentos';
 import BannerHorizontal from './assets/componentes/bannerHorizontal/bannerHorizontal';
 import ComprePorCategorias from './assets/componentes/comprePorCategorias/comprePorCategorias';
@@ -18,6 +18,7 @@ import VitrineImagens from './assets/componentes/vitrineImagens/vitrineImagens';
 import Newsletter from './assets/componentes/newsletter/newsletter';
 import Footer from './assets/componentes/footer/footer';
 import useIsMobile from './assets/hooks/useIsMobile';
+import BuscarPorPlaca from './assets/componentes/buscarProPlaca/buscarPorPlaca';
 
 function App() {
 
@@ -69,7 +70,7 @@ function App() {
             <CarrosselNossasMarcas />
             <Lancamentos />
             <BannerHorizontal />
-            <FiltroInteligente />
+            <BuscarPorPlaca />
             <ComprePorCategorias />
             <VitrineImagens />
             <Newsletter />
@@ -78,7 +79,8 @@ function App() {
         ) : (
           <>
             <SliderBannerPrincipal />
-            <FiltroInteligente />
+            <br /><br />
+            <BuscarPorPlaca />
             <Lancamentos />
             <BannerHorizontal />
             <ComprePorCategorias />

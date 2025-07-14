@@ -1,0 +1,99 @@
+.containerBuscarPorPlaca {
+    display: flex;
+    background-color: #F7F7F7;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 4rem;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headerBuscarPorPlaca {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: auto;
+}
+
+.headerBuscarPorPlaca h1 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cotainerForms input {
+    border-radius: 10px;
+    border: 1px solid #e5e6eb;
+    width: 400px;
+    padding: 1rem;
+    outline: 0;
+    color: #333;
+}
+
+.iconBuscarPorPlaca {
+    width: auto;
+    height: 23px;
+}
+
+.cotainerForms {
+    display: column;
+    margin: auto;
+}
+
+.containerBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.containerBtn > button {
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+}
+
+.btnLimpar {
+    border: 1px solid #e5e6eb;
+    background-color: #FFF;
+    color: #55565A;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 500;
+    width: 40%;
+    cursor: pointer;
+}
+
+.btnBuscar { 
+    border: 1px solid #AE1F21;
+    background-color: #AE1F21;
+    color: #FFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 500;
+    width: 60%;
+    cursor: pointer;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+@media (max-width: 599px) {
+    .cotainerForms {
+        margin:0%;
+    }
+   .cotainerForms input { 
+        width: 90%;
+   }
+   .containerBtn > button {
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+   }
+    .btnBuscar > svg {
+        width: 20px;
+   }
+}
