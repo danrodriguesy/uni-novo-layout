@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './carrosselMaisVendidos.module.css';
 import { CiHeart } from "react-icons/ci";
 import AdicionarProduto from '../../../componentes/produto/adicionarProduto/adicionarProduto';
+import Preco from '../../preco/preco';
 
 const produtos = [
   { id: 1, ref: '99743', nome: 'Amortecedor Mola a Gás da tampa do porta-mal....' },
@@ -69,6 +70,7 @@ function CarrosselMaisVendidos() {
                       <span className={styles.textoBtn1}>Cadastre-se</span><br />
                       <span className={styles.textoBtn2}>e veja o preço</span>
                     </button>*/}
+                    <Preco />
                     <AdicionarProduto />
                   </div>
                 </div>

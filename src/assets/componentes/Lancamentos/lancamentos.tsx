@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./lancamentos.module.css";
 import { CiHeart } from "react-icons/ci";
 import AdicionarProduto from "../produto/adicionarProduto/adicionarProduto";
+import Preco from '../preco/preco';
 
 
 const produtos = [
@@ -184,6 +185,7 @@ function ProdutoCard({ produto }: { produto: { ref: string; nome: string } }) {
           <br />
           <span className={styles.textoBtn2}>e veja o preço</span>
         </button>*/}
+        <Preco  />
         <AdicionarProduto />
 
       </div>

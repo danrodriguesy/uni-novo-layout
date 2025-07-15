@@ -133,6 +133,7 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
+  flex-direction: column;
 }
 .btnCadastro {
   width: 100%;
