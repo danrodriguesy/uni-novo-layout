@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slider.module.css';
 
@@ -23,12 +23,21 @@ const slides = [
 function Slider() {
   const [index, setIndex] = useState(0);
 
-  const next = () => setIndex((prev) => (prev + 1) % slides.length);
-  const prev = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  //const next = () => setIndex((prev) => (prev + 1) % slides.length);
+  //const prev = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+
+  // 👇 Autoplay: troca automática a cada 5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className={styles.wrapper}>
-      <img src="/imagens/topBar/arrowLeft.png" className={styles.seta} onClick={prev} />
+      {/*<img src="/imagens/topBar/arrowLeft.png" className={styles.seta} onClick={prev} />*/}
       <div className={styles.sliderArea}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -44,7 +53,7 @@ function Slider() {
           </motion.div>
         </AnimatePresence>
       </div>
-      <img src="/imagens/topBar/arrowRight.png" className={styles.seta} onClick={next} />
+      {/*<img src="/imagens/topBar/arrowRight.png" className={styles.seta} onClick={next} />*/}
     </div>
   );
 }

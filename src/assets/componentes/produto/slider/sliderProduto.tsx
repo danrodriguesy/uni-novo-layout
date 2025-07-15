@@ -4,7 +4,7 @@ import styles from './sliderProduto.module.css';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 const imagens = [
-  '/imagens/produto/fotoProduto.png',
+  '/imagens/produto/imagem-produto-apresentacao.jpeg',
   '/imagens/produto/imagemProduto2.webp',
   '/imagens/produto/imagemProduto3.webp',
   '/imagens/produto/imagemProduto4.webp'

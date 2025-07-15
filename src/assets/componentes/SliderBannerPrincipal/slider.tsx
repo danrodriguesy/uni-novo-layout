@@ -25,7 +25,6 @@ function Banner() {
   const next = () => setIndex((prev) => (prev + 1) % banners.length);
   const prev = () => setIndex((prev) => (prev - 1 + banners.length) % banners.length);
 
-
   const scrollTo = (i: number) => {
     if (scrollRef.current) {
       const slideWidth = scrollRef.current.offsetWidth;
@@ -36,6 +35,7 @@ function Banner() {
     }
   };
 
+  // Atualiza o índice no mobile ao fazer scroll manual
   useEffect(() => {
     if (!isMobile || !scrollRef.current) return;
 
@@ -50,6 +50,24 @@ function Banner() {
     el.addEventListener('scroll', handleScroll);
     return () => el.removeEventListener('scroll', handleScroll);
   }, [isMobile]);
+
+  // Autoplay: Desktop (setIndex) e Mobile (scrollTo)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (index + 1) % (isMobile ? bannersMobile.length : banners.length);
+      setIndex(nextIndex);
+
+      if (isMobile && scrollRef.current) {
+        const slideWidth = scrollRef.current.offsetWidth;
+        scrollRef.current.scrollTo({
+          left: nextIndex * slideWidth,
+          behavior: 'smooth',
+        });
+      }
+    }, 5000); // troca a cada 5s
+
+    return () => clearInterval(interval);
+  }, [index, isMobile]);
 
   return (
     <>
@@ -94,9 +112,8 @@ function Banner() {
         )}
       </div>
 
-      {/* Agora fora da wrapper — sem cortar, sem erro */}
       <div className={styles.dots}>
-        {banners.map((_, i) => (
+        {(isMobile ? bannersMobile : banners).map((_, i) => (
           <button
             key={i}
             onClick={() => {
