@@ -54,25 +54,18 @@ function VitrineImagens() {
     <>
       {!isMobile ? (
         <div className={styles.container}>
-          <div className={styles.div1}>
-            <img
-              className={`${styles.img1} ${styles.imageZoom}`}
-              src="/imagens/vitrineImagens/celular.png"
-              alt="celular"
-            />
-          </div>
           <div className={styles.div2}>
             <img
               className={`${styles.img2} ${styles.imageZoom}`}
-              src="/imagens/vitrineImagens/selecao-pecas-itens-linha-pesada.png"
+              src="/imagens/vitrineImagens/linha-pesada.gif"
               alt="linha pesada"
             />
             <img
-              className={`${styles.img3} ${styles.imageZoom}`}
-              
-              src="/imagens/vitrineImagens/selecao-pecas-vw-gol.png"
-              alt="vw gol"
+              className={`${styles.img2} ${styles.imageZoom}`}
+              src="/imagens/vitrineImagens/linha-leve.gif"
+              alt="linha pesada"
             />
+            
           </div>
         </div>
       ) : (

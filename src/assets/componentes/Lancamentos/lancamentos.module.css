@@ -14,10 +14,12 @@
 }
 
 .bannerLateral {
-  width: 235px;
+  width: 269px;
   height: auto;
   display: block;
   margin-left: 1rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
 }
 
 .icon {

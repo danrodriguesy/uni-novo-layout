@@ -73,7 +73,7 @@ function Lancamentos() {
           <div className={styles.containerBanner}>
             <img
               className={styles.bannerLateral}
-              src="/imagens/lancamentos/banner-vertical-lancamentos.png"
+              src="/imagens/lancamentos/macanetas.gif"
               alt="Banner Lateral"
             />
           </div>

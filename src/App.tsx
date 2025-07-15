@@ -20,10 +20,9 @@ import Footer from './assets/componentes/footer/footer';
 import useIsMobile from './assets/hooks/useIsMobile';
 import BuscarPorPlaca from './assets/componentes/buscarProPlaca/buscarPorPlaca';
 import CarrosselMaisVendidos from './assets/componentes/MaisVendidos/maisVendidosCarrossel/carrosselMaisVendidos';
-
+import WhatsappButton from '../src/assets/componentes/whatsapp/whatsapp';
 
 function App() {
-
   const isMobile = useIsMobile();
   const [showShadow, setShowShadow] = useState(false);
   const [hideTopbar, setHideTopbar] = useState(false);
@@ -77,6 +76,7 @@ function App() {
             <VitrineImagens />
             <Newsletter />
             <Footer />
+            <WhatsappButton />
           </>
         ) : (
           <>
@@ -90,7 +90,6 @@ function App() {
               textoBotao="Ver Mais"
             />
             <Lancamentos />
-            <BannerHorizontal />
             <ComprePorCategorias />
             <NossasMarcas />
             <CarrosselNossasMarcas />
@@ -106,6 +105,7 @@ function App() {
             <VitrineImagens />
             <Newsletter />
             <Footer />
+            <WhatsappButton />
           </>
         )}
       </main>

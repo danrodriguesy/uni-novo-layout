@@ -13,6 +13,7 @@ import CarrosselFull from '../assets/componentes/carrosselFull/carrosselFull';
 import DescricaoDetalhada from '../assets/componentes/produto/descricaoDetalhada/descricaoDetalhada';
 import useIsMobile from '../assets/hooks/useIsMobile';
 import Accordion  from '../assets/componentes/produto/accordion/accordion';
+import WhatsappButton from '../assets/componentes/whatsapp/whatsapp';
 
 type AccordionItem = {
   title: string;
@@ -52,6 +53,7 @@ function Produto(){
         <CarrosselFull />
         <Newsletter />
         <Footer />
+        <WhatsappButton />
       </>
     )
   }
@@ -78,6 +80,7 @@ function Produto(){
       <DescricaoDetalhada />
       <Newsletter />
       <Footer />
+      <WhatsappButton />
     </>
   )
 }

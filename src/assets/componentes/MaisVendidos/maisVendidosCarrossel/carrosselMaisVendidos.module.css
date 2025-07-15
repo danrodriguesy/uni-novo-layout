@@ -4,8 +4,9 @@
 }
 
 .bannerLateral {
-  width: 235px;
+  width: 269px;
   height: auto;
+  border-radius: 1rem;
 }
 
 .icon {
