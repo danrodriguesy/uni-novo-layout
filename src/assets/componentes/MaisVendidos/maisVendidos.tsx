@@ -29,6 +29,7 @@ function MaisVendidos({
           <button className={styles.btn} onClick={onClickBotao}>
             {textoBotao}
           </button>
+          
         </div>
       </div>
 

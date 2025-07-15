@@ -32,22 +32,17 @@ function VitrineImagens() {
   const slides = [
     {
       src: !isMobile ? "/imagens/vitrineImagens/celular.png"
-      : "/imagens/vitrineImagens/celular-mobile.png",
+      : "/imagens/vitrineImagens/linha-pesada.gif",
       alt: "celular",
       className: styles.img1,
     },
     {
       src: !isMobile ? "/imagens/vitrineImagens/selecao-pecas-itens-linha-pesada.png" 
-      : "/imagens/vitrineImagens/selecaoPecas-mobile.png",
+      : "/imagens/vitrineImagens/linha-leve.gif",
       alt: "linha pesada",
       className: styles.img2,
     },
-    {
-      src: !isMobile ? "/imagens/vitrineImagens/selecao-pecas-vw-gol.png" :
-      "/imagens/vitrineImagens/selecao-pecas-vw-gol-mobile.png",
-      alt: "vw gol",
-      className: styles.img3,
-    },
+    
   ];
 
   return (

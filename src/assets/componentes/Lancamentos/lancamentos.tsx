@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "./lancamentos.module.css";
 import { CiHeart } from "react-icons/ci";
+import AdicionarProduto from "../produto/adicionarProduto/adicionarProduto";
+
 
 const produtos = [
   { id: 1, ref: "99743", nome: "Amortecedor Mola a Gás da Tampa do Porta-Malas..." },
@@ -177,11 +179,13 @@ function ProdutoCard({ produto }: { produto: { ref: string; nome: string } }) {
       </div>
       
       <div className={styles.btn}>
-        <button className={styles.btnCadastro}>
+        {/*<button className={styles.btnCadastro}>
           <span className={styles.textoBtn1}>Cadastre-se</span>
           <br />
           <span className={styles.textoBtn2}>e veja o preço</span>
-        </button>
+        </button>*/}
+        <AdicionarProduto />
+
       </div>
     </>
   );
