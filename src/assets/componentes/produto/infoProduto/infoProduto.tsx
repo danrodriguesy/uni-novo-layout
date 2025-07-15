@@ -149,8 +149,7 @@ function InfoProduto() {
           </div>
           <div className={styles.tituloProduto}>
             <h1>
-              Amortecedor Mola a Gás da Tampa do Porta-Malas - Comprimento:
-              510mm/Curso: 210mm/Carga: 45KGF - Diâmetro Pistão: 8mm/Tubo: 18mm
+              Fechadura Interna do Porta-Malas c/ Micro Switch | 2 Pinos | Gol G5 a G8 2008 a 2023
             </h1>
           </div>
           {/* 

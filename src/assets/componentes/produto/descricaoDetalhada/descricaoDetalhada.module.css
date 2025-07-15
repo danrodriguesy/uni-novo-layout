@@ -8,6 +8,7 @@
     padding: 2rem;
     box-sizing: border-box;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 .containerDescricaoDetalhada h2 {
     font-size: 22px;
