@@ -1,5 +1,5 @@
 import styles from './descricaoDetalhada.module.css';
-import { FaStar } from "react-icons/fa";
+
 import { FaPlus } from "react-icons/fa";
 
 function DescricaoDetalhada() {
@@ -80,7 +80,7 @@ function DescricaoDetalhada() {
                 <h2 className={styles.titleInformativo}>Categoria</h2>
                 <p>Lorem ipsum dolor sit amet</p>
             </div>
-            <div className={styles.containerAvaliacaoProduto}>
+            {/*<div className={styles.containerAvaliacaoProduto}>
                 <div className={styles.headerAvaliacaoProduto}>
                     <h2 className={styles.titleAvaliacaoProduto}>Avaliação do Produto</h2>
                     <div className={styles.containerStars}>
@@ -98,7 +98,7 @@ function DescricaoDetalhada() {
                     <FaStar fontSize={25} className={styles.starCinza} />
                     <span className={styles.avaliarProduto}>Avaliar este produto</span>
                 </div>
-            </div>
+            </div>*/}
         </>
     )
 }

@@ -270,8 +270,15 @@
         width: 100%;
         box-sizing: border-box;
         margin: auto;
-        padding: 1rem 0;
+        padding: 1rem 2rem;
         height: 90px;
+    }
+    .contentTexto {
+        display: flex;
+        flex-direction: column;
+    }
+    .contentTexto > .textos { 
+        flex-direction: column;
     }
     .containerDuvidaTexto {
         display: flex;
@@ -283,6 +290,35 @@
     }
     .textos > span {
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
     }
+    .textos .title {
+        font-weight: bold;
+    }
+    .precoEstoque {
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+    .precos {
+        margin-top: 1.5rem;
+    }
+    .fob {
+        flex-direction: row;
+        padding: 5px 0.3rem;
+    }
+    .sedex {
+        flex-direction: row;
+        text-align: left;
+        padding: 5px 0.3rem;
+    }
+    .cardsSedexFob img {
+        width: 30px;
+    }
+    .cardsSedexFob p {
+        font-size: 12px;
+    }
+    .cardsSedexFob span {
+        font-size: 12px;
+    }
+    
 }
